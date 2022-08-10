@@ -7,10 +7,13 @@
     <title>DLK</title>
   </head>
   <body>
-    <footer>
+    <header>
       <div class="container">
-        <a href="#">
-          <img src="img/logo.svg" alt="Logo" />
+        <a href="./index.html">
+          <svg>
+            <title>Icon: Logo</title>
+            <use xlink:href="./static/icons/sprite.svg#logo"></use>
+          </svg>
         </a>
         <nav>
           <ul>
@@ -18,17 +21,20 @@
               <a href="#">Blog</a>
             </li>
             <li>
-              <a href="#">Catalog</a>
+              <a href="./pages/catalog.html">Catalog</a>
             </li>
             <li>
               <a href="#">About Us</a>
             </li>
           </ul>
         </nav>
-        <img src="img/search.svg" alt="Search" />
+        <svg>
+          <title>Icon: Search</title>
+          <use xlink:href="./static/icons/sprite.svg#search"></use>
+        </svg>
         <a href="#">Contact Us</a>
       </div>
-    </footer>
+    </header>
     <main>
       <section>
         <div class="container">
@@ -37,7 +43,7 @@
           <h1>THE OOH NOO COLLECTION</h1>
           <span>Designed in Slovenia</span>
           <button>EXPLORE NOW</button>
-          <img src="img/monster.png" alt="Monster" />
+          <img src="./static/img/monster.png" alt="Image: Monster" />
           <p>
             Free (continental) USA shipping on all orders of $100 USD or more!
           </p>
@@ -48,25 +54,43 @@
           <h2>Category Products</h2>
           <ul>
             <li>
-              <img src="img/apparel-kids.png" alt="Apparel Kids" />
+              <img
+                src="./static/img/apparel_kids.jpg"
+                alt="Image: Apparel Kids"
+              />
               <a href="#"> <h3>APPAREL KIDS</h3></a>
             </li>
             <li>
-              <img src="img/holiday-shop.png" alt="Holiday Shop" />
+              <img
+                src="./static/img/holiday_shop.jpg"
+                alt="Image: Holiday Shop"
+              />
               <a href="#"> <h3>HOLIDAY SHOP</h3></a>
             </li>
             <li>
-              <img src="img/toys.png" alt="Toys" />
+              <img src="./static/img/toys.jpg" alt="Image: Toys" />
               <a href="#"> <h3>TOYS</h3></a>
             </li>
             <li>
-              <img src="img/accessories.png" alt="Accessories" />
+              <img
+                src="./static/img/accessories.jpg"
+                alt="Image: Accessories"
+              />
               <a href="#"> <h3>ACCESSORIES</h3></a>
             </li>
           </ul>
           <div class="arrows">
-            <img src="img/arow-prev.svg" alt="Arrow Prew" />
-            <img src="img/arrow-next.svg" alt="Arrow Next" />
+            <button>
+              <svg>
+                <title>Icon: Arrow Prev</title>
+                <use xlink:href="./static/icons/sprite.svg#arrow_prev"></use>
+              </svg></button
+            ><button>
+              <svg>
+                <title>Icon: Arrow Next</title>
+                <use xlink:href="./static/icons/sprite.svg#arrow_next"></use>
+              </svg>
+            </button>
           </div>
           <p>
             Modern finds for the modern home. Curated goods by unique designers
@@ -76,7 +100,7 @@
       </section>
       <section>
         <div class="container">
-          <img src="img/delivery.jpg" alt="Delivery" />
+          <img src="./static/img/delivery.jpg" alt="Image: Delivery" />
           <h2>Delivery</h2>
           <nav>
             <ul>
@@ -104,40 +128,40 @@
           <h2>Awards</h2>
           <!-- -->
           <ul>
-            <li><img src="img/mailru.svg" alt="Mail Ru" /></li>
-            <li><img src="img/apple.svg" alt="Apple" /></li>
-            <li><img src="img/eltex.svg" alt="Eltex" /></li>
-            <li><img src="img/owox.svg" alt="Owox" /></li>
+            <li><img src="./static/img/mailru.png" alt="Image: Mail Ru" /></li>
+            <li><img src="./static/img/apple.png" alt="Image: Apple" /></li>
+            <li><img src="./static/img/eltex.png" alt="Image: Eltex" /></li>
+            <li>
+              <img src="./static/img/owox.png" alt="Image: Owox" />
+            </li>
           </ul>
         </div>
       </section>
-      <section>
-        <div class="container">
-          <div>
-            <h2>Design Life Kids</h2>
-            <span>About Us</span>
-            <p>
-              Some days i feel like i've been working on dlk my entire life and
-              there are other days that i am completely shocked that four years
-              have flown by. It's simply magical.
-            </p>
-            <a href="#">buy now</a>
-          </div>
-          <div>
-            <h2>Contacts</h2>
-            <p>
-              Some days i feel like i've been working on dlk my entire life and
-              there are other days that i am completely shocked that four years
-              have flown by. It's simply magical.
-            </p>
-            <div>Map</div>
-          </div>
-        </div>
-      </section>
+      <div class="container">
+        <section>
+          <h2>Design Life Kids</h2>
+          <span>About Us</span>
+          <p>
+            Some days i feel like i've been working on dlk my entire life and
+            there are other days that i am completely shocked that four years
+            have flown by. It's simply magical.
+          </p>
+          <a href="#">buy now</a>
+        </section>
+        <section>
+          <h2>Contacts</h2>
+          <p>
+            Some days i feel like i've been working on dlk my entire life and
+            there are other days that i am completely shocked that four years
+            have flown by. It's simply magical.
+          </p>
+          <div>Map</div>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="container">
-        <div>
+        <section>
           <h4>Navigation</h4>
           <nav>
             <ul>
@@ -149,8 +173,8 @@
               <li><a href="#">Shop By Designer</a></li>
             </ul>
           </nav>
-        </div>
-        <div>
+        </section>
+        <section>
           <h4>Customer Information</h4>
           <nav>
             <ul>
@@ -162,38 +186,71 @@
               <li><a href="#">Search</a></li>
             </ul>
           </nav>
-        </div>
-        <div>
+        </section>
+        <section>
           <h4>Connect</h4>
           <input type="text" />
           <button>Join</button>
           <ul>
             <li>
-              <a href="#"><img src="img/facebook.svg" alt="Facebook" /></a>
+              <a href="https://www.facebook.com/" target="_blank">
+                <svg>
+                  <title>Icon: Facebook</title>
+                  <use xlink:href="./static/icons/sprite.svg#facebook"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#"><img src="img/twitter.svg" alt="Twitter" /></a>
+              <a href="https://twitter.com/" target="_blank">
+                <svg>
+                  <title>Icon: Twitter</title>
+                  <use xlink:href="./static/icons/sprite.svg#twitter"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#"><img src="img/pinterest.svg" alt="Pinterest" /></a>
+              <a href="https://pinterest.com/" target="_blank">
+                <svg>
+                  <title>Icon: Pinterest</title>
+                  <use xlink:href="./static/icons/sprite.svg#pinterest"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#"><img src="img/instagram.svg" alt="Instagram" /></a>
+              <a href="https://www.instagram.com/" target="_blank">
+                <svg>
+                  <title>Icon: instagram</title>
+                  <use xlink:href="./static/icons/sprite.svg#instagram"></use>
+                </svg>
+              </a>
             </li>
           </ul>
+        </section>
+        <span>Company Rating</span>
+        <div class="stars">
+          <svg>
+            <title>Icon: Star</title>
+            <use xlink:href="./static/icons/sprite.svg#star"></use>
+          </svg>
+          <svg>
+            <title>Icon: Star</title>
+            <use xlink:href="./static/icons/sprite.svg#star"></use>
+          </svg>
+          <svg>
+            <title>Icon: Star</title>
+            <use xlink:href="./static/icons/sprite.svg#star"></use>
+          </svg>
+          <svg>
+            <title>Icon: Star</title>
+            <use xlink:href="./static/icons/sprite.svg#star"></use>
+          </svg>
+          <svg>
+            <title>Icon: Star</title>
+            <use xlink:href="./static/icons/sprite.svg#star"></use>
+          </svg>
         </div>
-        <div>
-          <span>Company Rating</span>
-          <div class="stars">
-            <img src="img/star.svg" alt="Star" />
-            <img src="img/star.svg" alt="Star" />
-            <img src="img/star.svg" alt="Star" />
-            <img src="img/star.svg" alt="Star" />
-            <img src="img/star.svg" alt="Star" />
-          </div>
-          <span>Copyright © 2018 Dlk • Design Life Kids</span>
-          <span>Web Design — Direct Line Development</span>
-        </div>
+        <span>Copyright © 2018 Dlk • Design Life Kids</span>
+        <span>Web Design — Direct Line Development</span>
       </div>
     </footer>
   </body>
