@@ -32,7 +32,7 @@
           <title>Icon: Search</title>
           <use xlink:href="./static/icons/sprite.svg#search"></use>
         </svg>
-        <a href="#">Contact Us</a>
+        <a href="./pages/contacts.html">Contact Us</a>
       </div>
     </header>
     <main>
@@ -69,7 +69,7 @@
             </li>
             <li>
               <img src="./static/img/toys.jpg" alt="Image: Toys" />
-              <a href="#"> <h3>TOYS</h3></a>
+              <a href="./pages/toys.html"> <h3>TOYS</h3></a>
             </li>
             <li>
               <img
@@ -178,7 +178,7 @@
           <h4>Customer Information</h4>
           <nav>
             <ul>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="./pages/contacts.html">Contact Us</a></li>
               <li><a href="#">Sale Exclusions</a></li>
               <li><a href="#">Shipping & Returns</a></li>
               <li><a href="#">Terms & Conditions</a></li>
@@ -189,8 +189,13 @@
         </section>
         <section>
           <h4>Connect</h4>
-          <input type="text" />
-          <button>Join</button>
+          <form action="#">
+            <div>
+              <label for="input-email-footer"></label>
+              <input type="email" id="input-email-footer" placeholder="Email" />
+              <button type="submit">Join</button>
+            </div>
+          </form>
           <ul>
             <li>
               <a href="https://www.facebook.com/" target="_blank">
@@ -226,32 +231,61 @@
             </li>
           </ul>
         </section>
-        <span>Company Rating</span>
-        <div class="stars">
-          <svg>
-            <title>Icon: Star</title>
-            <use xlink:href="./static/icons/sprite.svg#star"></use>
-          </svg>
-          <svg>
-            <title>Icon: Star</title>
-            <use xlink:href="./static/icons/sprite.svg#star"></use>
-          </svg>
-          <svg>
-            <title>Icon: Star</title>
-            <use xlink:href="./static/icons/sprite.svg#star"></use>
-          </svg>
-          <svg>
-            <title>Icon: Star</title>
-            <use xlink:href="./static/icons/sprite.svg#star"></use>
-          </svg>
-          <svg>
-            <title>Icon: Star</title>
-            <use xlink:href="./static/icons/sprite.svg#star"></use>
-          </svg>
-        </div>
+        <fieldset class="rating">
+          <legend>Company Rating</legend>
+          <input type="radio" name="star" value="1" aria-label="Ужасно" />
+          <input type="radio" name="star" value="2" aria-label="Сносно" />
+          <input type="radio" name="star" value="3" aria-label="Нормально" />
+          <input type="radio" name="star" value="4" aria-label="Хорошо" />
+          <input type="radio" name="star" value="5" aria-label="Отлично" />
+        </fieldset>
         <span>Copyright © 2018 Dlk • Design Life Kids</span>
         <span>Web Design — Direct Line Development</span>
       </div>
     </footer>
+    <section class="popup">
+      <!-- Сделать потом display: none-->
+      <h1>EXPLORE NOW</h1>
+      <!-- -->
+      <!-- Синяя подложка -->
+      <div class="overlay"></div>
+      <!-- -->
+      <div class="dialog">
+        <button>
+          <svg>
+            <title>Icon: Close Button</title>
+            <use xlink:href="./static/icons/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <form action="#">
+          <div>
+            <label for="input-name-popup">Name</label>
+            <input type="text" id="input-name-popup" />
+          </div>
+          <div>
+            <div>
+              <label for="input-phone-popup">Phone</label>
+              <input type="tel" id="input-phone-popup" />
+            </div>
+            <div>
+              <label for="input-email-popup">Email</label>
+              <input type="email" id="input-email-popup" />
+            </div>
+          </div>
+          <div>
+            <label for="input-message-popup">Message</label>
+            <textarea id="input-message-popup" cols="30" rows="10"></textarea>
+          </div>
+          <div>
+            <input type="checkbox" id="input-personal-popup" />
+            <label for="input-personal-popup"
+              >By clicking on the button, you consent to the processing of your
+              personal data</label
+            >
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>
