@@ -46,7 +46,66 @@
               <li><a href="../pages/toys.html">Toys</a></li>
             </ul>
           </nav>
-          <div></div>
+          <form action="#">
+            <div>
+              <label for="input-cost">Cost</label>
+              <span>0</span>
+              <input type="range" min="0" max="500" id="input-cost" />
+              <span>500</span>
+            </div>
+            <fieldset>
+              <legend>Color</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" id="input-black" />
+                  <label for="input-black">Black</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="input-blue" />
+                  <label for="input-blue">Blue</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="input-green" />
+                  <label for="input-green">Green</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="input-white" />
+                  <label for="input-white">White</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Delivery</legend>
+              <ul>
+                <li>
+                  <input type="radio" id="input-free" name="delivery" />
+                  <label for="input-free">Free shipping</label>
+                </li>
+                <li>
+                  <input type="radio" id="input-fast" name="delivery" />
+                  <label for="input-fast">Fast shipping</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Amount</legend>
+              <ul>
+                <li>
+                  <input type="radio" id="input-little" name="amount" />
+                  <label for="input-little">0-5</label>
+                </li>
+                <li>
+                  <input type="radio" id="input-medium" name="amount" />
+                  <label for="input-medium">10-20</label>
+                </li>
+                <li>
+                  <input type="radio" id="input-big" name="amount" />
+                  <label for="input-big">20-50</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit">Apply</button>
+          </form>
           <section>
             <ul>
               <li>
@@ -154,8 +213,8 @@
           <h4>Connect</h4>
           <form action="#">
             <div>
-              <label for="input-femail"></label>
-              <input type="email" id="input-femail" placeholder="Email" />
+              <label for="input-email-footer"></label>
+              <input type="email" id="input-email-footer" placeholder="Email" />
               <button type="submit">Join</button>
             </div>
           </form>
