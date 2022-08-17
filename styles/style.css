@@ -1,4 +1,7 @@
-.main {
+.main,
+.category,
+.delivery,
+.awards {
   margin-bottom: 90px;
 }
 
@@ -64,4 +67,22 @@
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}
+
+.arrows-button {
+  width: 37px;
+  height: 37px;
+  background: rgba(112, 187, 220, 0.2);
+  border: none;
+  cursor: pointer;
+}
+
+.arrows-button__icon {
+  width: inherit;
+  height: inherit;
+}
+
+.delivery-image {
+  width: 480px;
+  height: 559px;
 }

@@ -56,6 +56,24 @@ a {
   text-transform: uppercase;
 }
 
+.subtitle--hidden {
+  display: none;
+}
+
+.italic {
+  font-family: "Crimson Text", sans-serif;
+  font-style: italic;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.info {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
 .button {
   font-size: 16px;
   font-weight: 700;
@@ -67,6 +85,11 @@ a {
   border: none;
   padding: 9px 22px;
   cursor: pointer;
+}
+
+.button-link {
+  display: block;
+  max-width: 149px;
 }
 
 .header {
@@ -103,6 +126,7 @@ a {
 .footer {
   background-color: #434343;
   padding: 100px 0;
+  margin-top: 50px;
 }
 
 .footer-title {
