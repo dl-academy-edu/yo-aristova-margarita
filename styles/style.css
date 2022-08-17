@@ -1,0 +1,67 @@
+.main {
+  margin-bottom: 90px;
+}
+
+.main-background {
+  background: #eee4db;
+}
+
+.count {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 73px;
+  color: rgba(30, 6, 6, 0.05);
+}
+
+.control {
+  width: 31px;
+  height: 3px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.control__line {
+  display: block;
+  width: inherit;
+  height: inherit;
+}
+
+.design {
+  font-family: "Crimson Text";
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.banner {
+  width: 636px;
+  height: 461px;
+}
+
+.offer {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #c29974;
+  padding: 11px 0;
+}
+
+.category-list__item {
+  width: 280px;
+  height: 270px;
+}
+
+.category-list__title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
+}

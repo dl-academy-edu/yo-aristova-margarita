@@ -7,10 +7,11 @@
     <title>DLK</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -46,47 +47,91 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="main">
         <div class="container">
-          <span>01</span>
-          <div class="lines"></div>
-          <h1>THE OOH NOO COLLECTION</h1>
-          <span>Designed in Slovenia</span>
-          <button>EXPLORE NOW</button>
-          <img src="./static/img/monster.png" alt="Image: Monster" />
-          <p>
+          <div class="main-background">
+            <span class="count">01</span>
+            <div>
+              <button class="control">
+                <svg class="control__line">
+                  <title>Icon: Line</title>
+                  <use xlink:href="./static/icons/sprite.svg#line"></use>
+                </svg>
+              </button>
+              <button class="control">
+                <svg class="control__line">
+                  <title>Icon: Line</title>
+                  <use xlink:href="./static/icons/sprite.svg#line"></use>
+                </svg>
+              </button>
+              <button class="control">
+                <svg class="control__line">
+                  <title>Icon: Line</title>
+                  <use xlink:href="./static/icons/sprite.svg#line"></use>
+                </svg>
+              </button>
+              <button class="control">
+                <svg class="control__line">
+                  <title>Icon: Line</title>
+                  <use xlink:href="./static/icons/sprite.svg#line"></use>
+                </svg>
+              </button>
+            </div>
+            <h1 class="title">THE OOH NOO COLLECTION</h1>
+            <span class="design">Designed in Slovenia</span>
+            <button type="submit" class="button">EXPLORE NOW</button>
+            <img
+              src="./static/img/monster.png"
+              alt="Image: Monster"
+              class="banner"
+            />
+          </div>
+          <p class="offer">
             Free (continental) USA shipping on all orders of $100 USD or more!
           </p>
         </div>
       </section>
       <section>
         <div class="container">
-          <h2>Category Products</h2>
-          <ul>
+          <h2 class="subtitle">Category Products</h2>
+          <ul class="category-list">
             <li>
               <img
                 src="./static/img/apparel_kids.jpg"
                 alt="Image: Apparel Kids"
+                class="category-list__item"
               />
-              <a href="#"> <h3>APPAREL KIDS</h3></a>
+              <a href="#">
+                <h4 class="category-list__title">APPAREL KIDS</h4></a
+              >
             </li>
             <li>
               <img
                 src="./static/img/holiday_shop.jpg"
                 alt="Image: Holiday Shop"
+                class="category-list__item"
               />
-              <a href="#"> <h3>HOLIDAY SHOP</h3></a>
+              <a href="#">
+                <h4 class="category-list__title">HOLIDAY SHOP</h4></a
+              >
             </li>
             <li>
-              <img src="./static/img/toys.jpg" alt="Image: Toys" />
-              <a href="./pages/toys.html"> <h3>TOYS</h3></a>
+              <img
+                src="./static/img/toys.jpg"
+                alt="Image: Toys"
+                class="category-list__item"
+              />
+              <a href="./pages/toys.html">
+                <h4 class="category-list__title">TOYS</h4></a
+              >
             </li>
             <li>
               <img
                 src="./static/img/accessories.jpg"
                 alt="Image: Accessories"
+                class="category-list__item"
               />
-              <a href="#"> <h3>ACCESSORIES</h3></a>
+              <a href="#"> <h4 class="category-list__title">ACCESSORIES</h4></a>
             </li>
           </ul>
           <div class="arrows">
@@ -113,9 +158,9 @@
           <img src="./static/img/delivery.jpg" alt="Image: Delivery" />
           <h2>Delivery</h2>
           <ul>
-            <li><a href="#">Delivery</a></li>
-            <li><a href="#">Guarantee</a></li>
-            <li><a href="#">Credit</a></li>
+            <li><h3>Delivery</h3></li>
+            <li><h3>Guarantee</h3></li>
+            <li><h3>Credit</h3></li>
           </ul>
           <p>
             Some days i feel like i've been working on dlk my entire life and
