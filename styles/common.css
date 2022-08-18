@@ -46,6 +46,49 @@ a {
   border-bottom: 60px;
 }
 
+.form {
+  background-color: #e5eaf8;
+  padding: 42px 40px;
+}
+
+.form__label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.form__personal {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.form__input {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.name {
+  width: 600px;
+  min-height: 50px;
+}
+
+.phone,
+.email {
+  width: 290px;
+  min-height: 50px;
+}
+
+.message {
+  width: 600px;
+  min-height: 150px;
+}
+
+.message {
+  min-height: 150px;
+  resize: none;
+}
+
 .title {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
@@ -62,7 +105,7 @@ a {
   text-transform: uppercase;
 }
 
-.subtitle--hidden {
+.hidden {
   display: none;
 }
 
