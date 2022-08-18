@@ -47,6 +47,7 @@ a {
 }
 
 .form {
+  width: 680px;
   background-color: #e5eaf8;
   padding: 42px 40px;
 }
@@ -143,6 +144,10 @@ a {
   border: none;
   padding: 9px 22px;
   cursor: pointer;
+}
+
+.button:hover {
+  background: #c29974;
 }
 
 .button-link {

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/popup.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -175,9 +176,7 @@
       </section>
       <section class="awards">
         <div class="container">
-          <!-- Сделать потом display: none-->
-          <h2 class="subtitle hidden">Awards</h2>
-          <!-- -->
+          <h2 class="hidden">Awards</h2>
           <ul>
             <li><img src="./static/img/mailru.png" alt="Image: Mail Ru" /></li>
             <li><img src="./static/img/apple.png" alt="Image: Apple" /></li>
@@ -323,45 +322,56 @@
     </footer>
     <section class="popup">
       <!-- Сделать потом display: none-->
-      <h1>EXPLORE NOW</h1>
+      <h1 class="hidden">EXPLORE NOW</h1>
       <!-- -->
       <!-- Синяя подложка -->
       <div class="overlay"></div>
       <!-- -->
       <div class="dialog">
-        <button>
-          <svg>
+        <button class="close-button">
+          <svg class="close-button__icon">
             <title>Icon: Close Button</title>
             <use xlink:href="./static/icons/sprite.svg#close"></use>
           </svg>
         </button>
-        <form action="#">
+        <form action="#" class="form">
           <div>
-            <label for="input-name-popup">Name</label>
-            <input type="text" id="input-name-popup" />
+            <label for="input-name-popup" class="form__label">Name</label>
+            <input type="text" id="input-name-popup" class="form__input name" />
           </div>
           <div>
             <div>
-              <label for="input-phone-popup">Phone</label>
-              <input type="tel" id="input-phone-popup" />
+              <label for="input-phone-popup" class="form__label">Phone</label>
+              <input
+                type="tel"
+                id="input-phone-popup"
+                class="form__input phone"
+              />
             </div>
             <div>
-              <label for="input-email-popup">Email</label>
-              <input type="email" id="input-email-popup" />
+              <label for="input-email-popup" class="form__label">Email</label>
+              <input
+                type="email"
+                id="input-email-popup"
+                class="form__input email"
+              />
             </div>
           </div>
           <div>
-            <label for="input-message-popup">Message</label>
-            <textarea id="input-message-popup" cols="30" rows="10"></textarea>
+            <label for="input-message-popup" class="form__label">Message</label>
+            <textarea
+              id="input-message-popup"
+              class="form__input message"
+            ></textarea>
           </div>
           <div>
             <input type="checkbox" id="input-personal-popup" />
-            <label for="input-personal-popup"
+            <label for="input-personal-popup" class="form__personal"
               >By clicking on the button, you consent to the processing of your
               personal data</label
             >
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" class="button">Submit</button>
         </form>
       </div>
     </section>
