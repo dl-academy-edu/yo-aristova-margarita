@@ -7,6 +7,7 @@
     <title>Toys</title>
     <link rel="stylesheet" href="../styles/normalize.css" />
     <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/toys.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,148 +47,158 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="section">
         <div class="container">
-          <h1>Toy for kids</h1>
-          <nav>
-            <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../pages/catalog.html">Catalog</a></li>
-              <li><a href="../pages/toys.html">Toys</a></li>
+          <h1 class="title">Toy for kids</h1>
+          <nav class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-list__item">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="breadcrumbs-list__item">
+                <a href="../pages/catalog.html">Catalog</a>
+              </li>
+              <li class="breadcrumbs-list__item">
+                <a href="../pages/toys.html">Toys</a>
+              </li>
             </ul>
           </nav>
+        </div>
+      </section>
+      <div class="filter">
+        <div class="container">
           <form action="#">
             <div>
-              <label for="input-cost">Cost</label>
-              <span>0</span>
+              <label for="input-cost" class="headline">Cost</label>
+              <span class="info">0</span>
               <input type="range" min="0" max="500" id="input-cost" />
-              <span>500</span>
+              <span class="info">500</span>
             </div>
             <fieldset>
-              <legend>Color</legend>
+              <legend class="headline">Color</legend>
               <ul>
                 <li>
                   <input type="checkbox" id="input-black" />
-                  <label for="input-black">Black</label>
+                  <label for="input-black" class="info">Black</label>
                 </li>
                 <li>
                   <input type="checkbox" id="input-blue" />
-                  <label for="input-blue">Blue</label>
+                  <label for="input-blue" class="info">Blue</label>
                 </li>
                 <li>
                   <input type="checkbox" id="input-green" />
-                  <label for="input-green">Green</label>
+                  <label for="input-green" class="info">Green</label>
                 </li>
                 <li>
                   <input type="checkbox" id="input-white" />
-                  <label for="input-white">White</label>
+                  <label for="input-white" class="info">White</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Delivery</legend>
+              <legend class="headline">Delivery</legend>
               <ul>
                 <li>
                   <input type="radio" id="input-free" name="delivery" />
-                  <label for="input-free">Free shipping</label>
+                  <label for="input-free" class="info">Free shipping</label>
                 </li>
                 <li>
                   <input type="radio" id="input-fast" name="delivery" />
-                  <label for="input-fast">Fast shipping</label>
+                  <label for="input-fast" class="info">Fast shipping</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Amount</legend>
+              <legend class="headline">Amount</legend>
               <ul>
                 <li>
                   <input type="radio" id="input-little" name="amount" />
-                  <label for="input-little">0-5</label>
+                  <label for="input-little" class="info">0-5</label>
                 </li>
                 <li>
                   <input type="radio" id="input-medium" name="amount" />
-                  <label for="input-medium">10-20</label>
+                  <label for="input-medium" class="info">10-20</label>
                 </li>
                 <li>
                   <input type="radio" id="input-big" name="amount" />
-                  <label for="input-big">20-50</label>
+                  <label for="input-big" class="info">20-50</label>
                 </li>
               </ul>
             </fieldset>
-            <button type="submit">Apply</button>
+            <button type="submit" class="button">Apply</button>
           </form>
-          <section>
-            <ul>
-              <li>
-                <img
-                  src="../static/img/sharky.png"
-                  alt="Image: Sharky Bean Bag Chair Cover"
-                />
-                <h6>SHARKY BEAN BAG CHAIR COVER</h6>
-                <span>$60.00 USD</span>
-              </li>
-              <li>
-                <img
-                  src="../static/img/brass.png"
-                  alt="Image: Brass Deco Frames"
-                />
-                <h6>BRASS DECO FRAMES</h6>
-                <span>$66.00 USD</span>
-              </li>
-              <li>
-                <img
-                  src="../static/img/cibo.png"
-                  alt="Image: Cibo Full Apron"
-                />
-                <h6>CIBO FULL APRON</h6>
-                <span>$60.00 USD</span>
-              </li>
-              <li>
-                <img
-                  src="../static/img/gatcha.png"
-                  alt="Image: Gatcha Gatcha Gumball Machine"
-                />
-                <h6>GATCHA GATCHA GUMBALL MACHINE</h6>
-                <span>$56.00 USD</span>
-              </li>
-              <li>
-                <img
-                  src="../static/img/christmas.png"
-                  alt="Image: Christmas Advent Scented Candle"
-                />
-                <h6>CHRISTMAS ADVENT SCENTED CANDLE</h6>
-                <span>$29.00 USD</span>
-              </li>
-              <li>
-                <img
-                  src="../static/img/tangle.png"
-                  alt="Image: Tangle Spinning Tea Light"
-                />
-                <h6>TANGLE SPINNING TEA LIGHT</h6>
-                <span>$56.00 USD</span>
-              </li>
-            </ul>
-            <nav>
-              <button>
-                <svg>
-                  <title>Icon: Arrow Prev</title>
-                  <use xlink:href="../static/icons/sprite.svg#arrow_prev"></use>
-                </svg>
-              </button>
-              <ol>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-              </ol>
-              <button>
-                <svg>
-                  <title>Icon: Arrow Next</title>
-                  <use xlink:href="../static/icons/sprite.svg#arrow_next"></use>
-                </svg>
-              </button>
-            </nav>
-          </section>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container">
+          <ul class="product-list">
+            <li>
+              <img
+                src="../static/img/sharky.png"
+                alt="Image: Sharky Bean Bag Chair Cover" class="product-list__image"
+              />
+              <h6 class="product-list__title">SHARKY BEAN BAG CHAIR COVER</h6>
+              <span class="product-list__price">$60.00 USD</span>
+            </li>
+            <li>
+              <img
+                src="../static/img/brass.png"
+                alt="Image: Brass Deco Frames" class="product-list__image"
+              />
+              <h6 class="product-list__title">BRASS DECO FRAMES</h6>
+              <span class="product-list__price">$66.00 USD</span>
+            </li>
+            <li>
+              <img src="../static/img/cibo.png" alt="Image: Cibo Full Apron" class="product-list__image" />
+              <h6 class="product-list__title">CIBO FULL APRON</h6>
+              <span class="product-list__price">$60.00 USD</span>
+            </li>
+            <li>
+              <img
+                src="../static/img/gatcha.png"
+                alt="Image: Gatcha Gatcha Gumball Machine" class="product-list__image"
+              />
+              <h6 class="product-list__title">GATCHA GATCHA GUMBALL MACHINE</h6>
+              <span class="product-list__price">$56.00 USD</span>
+            </li>
+            <li>
+              <img
+                src="../static/img/christmas.png"
+                alt="Image: Christmas Advent Scented Candle" class="product-list__image"
+              />
+              <h6 class="product-list__title">CHRISTMAS ADVENT SCENTED CANDLE</h6>
+              <span class="product-list__price">$29.00 USD</span>
+            </li>
+            <li>
+              <img
+                src="../static/img/tangle.png"
+                alt="Image: Tangle Spinning Tea Light" class="product-list__image"
+              />
+              <h6 class="product-list__title">TANGLE SPINNING TEA LIGHT</h6>
+              <span class="product-list__price">$56.00 USD</span>
+            </li>
+          </ul>
+          <nav>
+            <button class="arrow">
+              <svg class="arrow__icon">
+                <title>Icon: Arrow Prev</title>
+                <use xlink:href="../static/icons/sprite.svg#arrow_prev"></use>
+              </svg>
+            </button >
+            <ol class="pagination">
+              <li><a href="#" class="pagination__link">1</a></li>
+              <li><a href="#" class="pagination__link">2</a></li>
+              <li><a href="#" class="pagination__link">3</a></li>
+              <li><a href="#" class="pagination__link">4</a></li>
+            </ol>
+            </button>
+            <button class="arrow">
+              <svg class="arrow__icon">
+                <title>Icon: Arrow Next</title>
+                <use xlink:href="../static/icons/sprite.svg#arrow_next"></use>
+              </svg>
+            </button>
+          </nav>
         </div>
       </section>
     </main>
