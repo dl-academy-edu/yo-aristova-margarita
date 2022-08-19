@@ -1,0 +1,20 @@
+.close-button {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.close-button__icon {
+  width: inherit;
+  height: inherit;
+}
+
+.overlay {
+  background: rgba(125, 151, 218, 0.8);
+  /* Потом будут доп стили */
+}
+
+.dialog {
+  width: 680px;
+  margin: auto;
+}

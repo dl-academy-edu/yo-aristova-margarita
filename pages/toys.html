@@ -5,247 +5,291 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Toys</title>
+    <link rel="stylesheet" href="../styles/normalize.css" />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="../styles/toys.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <a href="../index.html">
-          <svg>
+        <a href="../index.html" class="logo">
+          <svg class="logo__image">
             <title>Icon: Logo</title>
             <use xlink:href="../static/icons/sprite.svg#logo"></use>
           </svg>
         </a>
-        <nav>
+        <nav class="header-nav">
           <ul>
             <li>
-              <a href="#">Blog</a>
+              <a href="#" class="header-nav__link">Blog</a>
             </li>
             <li>
-              <a href="../pages/catalog.html">Catalog</a>
+              <a href="../pages/catalog.html" class="header-nav__link"
+                >Catalog</a
+              >
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#" class="header-nav__link">About Us</a>
             </li>
           </ul>
         </nav>
-        <svg>
+        <svg class="search">
           <title>Icon: Search</title>
           <use xlink:href="../static/icons/sprite.svg#search"></use>
         </svg>
-        <a href="../pages/contacts.html">Contact Us</a>
+        <a href="../pages/contacts.html" class="contact">Contact Us</a>
       </div>
     </header>
     <main>
-      <section>
+      <section class="section">
         <div class="container">
-          <h1>Toy for kids</h1>
-          <nav>
-            <ul>
-              <li><a href="../index.html">Home</a></li>
-              <li><a href="../pages/catalog.html">Catalog</a></li>
-              <li><a href="../pages/toys.html">Toys</a></li>
+          <h1 class="title">Toy for kids</h1>
+          <nav class="breadcrumbs">
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-list__item">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="breadcrumbs-list__item">
+                <a href="../pages/catalog.html">Catalog</a>
+              </li>
+              <li class="breadcrumbs-list__item">
+                <a href="../pages/toys.html">Toys</a>
+              </li>
             </ul>
           </nav>
+        </div>
+      </section>
+      <div class="filter">
+        <div class="container">
           <form action="#">
             <div>
-              <label for="input-cost">Cost</label>
-              <span>0</span>
+              <label for="input-cost" class="headline">Cost</label>
+              <span class="info">0</span>
               <input type="range" min="0" max="500" id="input-cost" />
-              <span>500</span>
+              <span class="info">500</span>
             </div>
             <fieldset>
-              <legend>Color</legend>
+              <legend class="headline">Color</legend>
               <ul>
                 <li>
                   <input type="checkbox" id="input-black" />
-                  <label for="input-black">Black</label>
+                  <label for="input-black" class="info">Black</label>
                 </li>
                 <li>
                   <input type="checkbox" id="input-blue" />
-                  <label for="input-blue">Blue</label>
+                  <label for="input-blue" class="info">Blue</label>
                 </li>
                 <li>
                   <input type="checkbox" id="input-green" />
-                  <label for="input-green">Green</label>
+                  <label for="input-green" class="info">Green</label>
                 </li>
                 <li>
                   <input type="checkbox" id="input-white" />
-                  <label for="input-white">White</label>
+                  <label for="input-white" class="info">White</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Delivery</legend>
+              <legend class="headline">Delivery</legend>
               <ul>
                 <li>
                   <input type="radio" id="input-free" name="delivery" />
-                  <label for="input-free">Free shipping</label>
+                  <label for="input-free" class="info">Free shipping</label>
                 </li>
                 <li>
                   <input type="radio" id="input-fast" name="delivery" />
-                  <label for="input-fast">Fast shipping</label>
+                  <label for="input-fast" class="info">Fast shipping</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset>
-              <legend>Amount</legend>
+              <legend class="headline">Amount</legend>
               <ul>
                 <li>
                   <input type="radio" id="input-little" name="amount" />
-                  <label for="input-little">0-5</label>
+                  <label for="input-little" class="info">0-5</label>
                 </li>
                 <li>
                   <input type="radio" id="input-medium" name="amount" />
-                  <label for="input-medium">10-20</label>
+                  <label for="input-medium" class="info">10-20</label>
                 </li>
                 <li>
                   <input type="radio" id="input-big" name="amount" />
-                  <label for="input-big">20-50</label>
+                  <label for="input-big" class="info">20-50</label>
                 </li>
               </ul>
             </fieldset>
-            <button type="submit">Apply</button>
+            <button type="submit" class="button">Apply</button>
           </form>
-          <section>
-            <ul>
-              <li>
-                <img
-                  src="../static/img/sharky.png"
-                  alt="Image: Sharky Bean Bag Chair Cover"
-                />
-                <h6>SHARKY BEAN BAG CHAIR COVER</h6>
-                <span>$60.00 USD</span>
-              </li>
-              <li>
-                <img
-                  src="../static/img/brass.png"
-                  alt="Image: Brass Deco Frames"
-                />
-                <h6>BRASS DECO FRAMES</h6>
-                <span>$66.00 USD</span>
-              </li>
-              <li>
-                <img
-                  src="../static/img/cibo.png"
-                  alt="Image: Cibo Full Apron"
-                />
-                <h6>CIBO FULL APRON</h6>
-                <span>$60.00 USD</span>
-              </li>
-              <li>
-                <img
-                  src="../static/img/gatcha.png"
-                  alt="Image: Gatcha Gatcha Gumball Machine"
-                />
-                <h6>GATCHA GATCHA GUMBALL MACHINE</h6>
-                <span>$56.00 USD</span>
-              </li>
-              <li>
-                <img
-                  src="../static/img/christmas.png"
-                  alt="Image: Christmas Advent Scented Candle"
-                />
-                <h6>CHRISTMAS ADVENT SCENTED CANDLE</h6>
-                <span>$29.00 USD</span>
-              </li>
-              <li>
-                <img
-                  src="../static/img/tangle.png"
-                  alt="Image: Tangle Spinning Tea Light"
-                />
-                <h6>TANGLE SPINNING TEA LIGHT</h6>
-                <span>$56.00 USD</span>
-              </li>
-            </ul>
-            <nav>
-              <button>
-                <svg>
-                  <title>Icon: Arrow Prev</title>
-                  <use xlink:href="../static/icons/sprite.svg#arrow_prev"></use>
-                </svg>
-              </button>
-              <ol>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-              </ol>
-              <button>
-                <svg>
-                  <title>Icon: Arrow Next</title>
-                  <use xlink:href="../static/icons/sprite.svg#arrow_next"></use>
-                </svg>
-              </button>
-            </nav>
-          </section>
+        </div>
+      </div>
+      <section class="section">
+        <div class="container">
+          <ul class="product-list">
+            <li>
+              <img
+                src="../static/img/sharky.png"
+                alt="Image: Sharky Bean Bag Chair Cover" class="product-list__image"
+              />
+              <h6 class="product-list__title">SHARKY BEAN BAG CHAIR COVER</h6>
+              <span class="product-list__price">$60.00 USD</span>
+            </li>
+            <li>
+              <img
+                src="../static/img/brass.png"
+                alt="Image: Brass Deco Frames" class="product-list__image"
+              />
+              <h6 class="product-list__title">BRASS DECO FRAMES</h6>
+              <span class="product-list__price">$66.00 USD</span>
+            </li>
+            <li>
+              <img src="../static/img/cibo.png" alt="Image: Cibo Full Apron" class="product-list__image" />
+              <h6 class="product-list__title">CIBO FULL APRON</h6>
+              <span class="product-list__price">$60.00 USD</span>
+            </li>
+            <li>
+              <img
+                src="../static/img/gatcha.png"
+                alt="Image: Gatcha Gatcha Gumball Machine" class="product-list__image"
+              />
+              <h6 class="product-list__title">GATCHA GATCHA GUMBALL MACHINE</h6>
+              <span class="product-list__price">$56.00 USD</span>
+            </li>
+            <li>
+              <img
+                src="../static/img/christmas.png"
+                alt="Image: Christmas Advent Scented Candle" class="product-list__image"
+              />
+              <h6 class="product-list__title">CHRISTMAS ADVENT SCENTED CANDLE</h6>
+              <span class="product-list__price">$29.00 USD</span>
+            </li>
+            <li>
+              <img
+                src="../static/img/tangle.png"
+                alt="Image: Tangle Spinning Tea Light" class="product-list__image"
+              />
+              <h6 class="product-list__title">TANGLE SPINNING TEA LIGHT</h6>
+              <span class="product-list__price">$56.00 USD</span>
+            </li>
+          </ul>
+          <nav>
+            <button class="arrow">
+              <svg class="arrow__icon">
+                <title>Icon: Arrow Prev</title>
+                <use xlink:href="../static/icons/sprite.svg#arrow_prev"></use>
+              </svg>
+            </button >
+            <ol class="pagination">
+              <li><a href="#" class="pagination__link">1</a></li>
+              <li><a href="#" class="pagination__link">2</a></li>
+              <li><a href="#" class="pagination__link">3</a></li>
+              <li><a href="#" class="pagination__link">4</a></li>
+            </ol>
+            </button>
+            <button class="arrow">
+              <svg class="arrow__icon">
+                <title>Icon: Arrow Next</title>
+                <use xlink:href="../static/icons/sprite.svg#arrow_next"></use>
+              </svg>
+            </button>
+          </nav>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <section>
-          <h4>Navigation</h4>
+          <h5 class="footer-title">Navigation</h5>
           <nav>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Design Services</a></li>
-              <li><a href="#">Featured On</a></li>
-              <li><a href="#">2018 Holiday Catalog</a></li>
-              <li><a href="#">Shop By Designer</a></li>
+              <li><a href="#" class="footer-nav__link">About Us</a></li>
+              <li><a href="#" class="footer-nav__link">Blog</a></li>
+              <li><a href="#" class="footer-nav__link">Design Services</a></li>
+              <li><a href="#" class="footer-nav__link">Featured On</a></li>
+              <li>
+                <a href="#" class="footer-nav__link">2018 Holiday Catalog</a>
+              </li>
+              <li><a href="#" class="footer-nav__link">Shop By Designer</a></li>
             </ul>
           </nav>
         </section>
         <section>
-          <h4>Customer Information</h4>
+          <h5 class="footer-title">Customer Information</h5>
           <nav>
             <ul>
-              <li><a href="./contacts.html">Contact Us</a></li>
-              <li><a href="#">Sale Exclusions</a></li>
-              <li><a href="#">Shipping & Returns</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Search</a></li>
+              <li>
+                <a href="./pages/contacts.html" class="footer-nav__link"
+                  >Contact Us</a
+                >
+              </li>
+              <li><a href="#" class="footer-nav__link">Sale Exclusions</a></li>
+              <li>
+                <a href="#" class="footer-nav__link">Shipping & Returns</a>
+              </li>
+              <li>
+                <a href="#" class="footer-nav__link">Terms & Conditions</a>
+              </li>
+              <li><a href="#" class="footer-nav__link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-nav__link">Search</a></li>
             </ul>
           </nav>
         </section>
         <section>
-          <h4>Connect</h4>
+          <h5 class="footer-title">Connect</h5>
           <form action="#">
             <div>
               <label for="input-email-footer"></label>
-              <input type="email" id="input-email-footer" placeholder="Email" />
-              <button type="submit">Join</button>
+              <input
+                type="email"
+                id="input-email-footer"
+                placeholder="Email"
+                class="footer-input"
+              />
+              <button type="submit" class="button">Join</button>
             </div>
           </form>
           <ul>
             <li>
-              <a href="https://www.facebook.com/" target="_blank">
-                <svg>
+              <a
+                href="https://www.facebook.com/"
+                class="social"
+                target="_blank"
+              >
+                <svg class="social">
                   <title>Icon: Facebook</title>
                   <use xlink:href="../static/icons/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/" target="_blank">
-                <svg>
+              <a href="https://twitter.com/" class="social" target="_blank">
+                <svg class="social__icon">
                   <title>Icon: Twitter</title>
                   <use xlink:href="../static/icons/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://pinterest.com/" target="_blank">
-                <svg>
+              <a href="https://pinterest.com/" class="social" target="_blank">
+                <svg class="social__icon">
                   <title>Icon: Pinterest</title>
                   <use xlink:href="../static/icons/sprite.svg#pinterest"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/" target="_blank">
-                <svg>
+              <a
+                href="https://www.instagram.com/"
+                class="social"
+                target="_blank"
+              >
+                <svg class="social__icon">
                   <title>Icon: instagram</title>
                   <use xlink:href="../static/icons/sprite.svg#instagram"></use>
                 </svg>
@@ -261,8 +305,12 @@
           <input type="radio" name="star" value="4" aria-label="Хорошо" />
           <input type="radio" name="star" value="5" aria-label="Отлично" />
         </fieldset>
-        <span>Copyright © 2018 Dlk • Design Life Kids</span>
-        <span>Web Design — Direct Line Development</span>
+        <span class="footer-bottom"
+          >Copyright © 2018 Dlk • Design Life Kids</span
+        >
+        <span class="footer-bottom footer-bottom--light"
+          >Web Design — Direct Line Development</span
+        >
       </div>
     </footer>
   </body>

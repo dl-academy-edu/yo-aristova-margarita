@@ -1,0 +1,33 @@
+.filter {
+  background: rgba(125, 151, 218, 0.2);
+}
+
+.headline,
+.product-list__price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.product-list__image {
+  width: 380px;
+  height: 385px;
+}
+
+.product-list__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.arrow__icon {
+  width: inherit;
+  height: inherit;
+}

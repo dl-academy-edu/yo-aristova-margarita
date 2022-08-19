@@ -5,128 +5,178 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DLK</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/popup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,400;1,700&family=Montserrat:wght@200;600;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <a href="./index.html">
-          <svg>
+        <a href="./index.html" class="logo">
+          <svg class="logo__image">
             <title>Icon: Logo</title>
             <use xlink:href="./static/icons/sprite.svg#logo"></use>
           </svg>
         </a>
-        <nav>
+        <nav class="header-nav">
           <ul>
             <li>
-              <a href="#">Blog</a>
+              <a href="#" class="header-nav__link">Blog</a>
             </li>
             <li>
-              <a href="./pages/catalog.html">Catalog</a>
+              <a href="./pages/catalog.html" class="header-nav__link"
+                >Catalog</a
+              >
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#" class="header-nav__link">About Us</a>
             </li>
           </ul>
         </nav>
-        <svg>
+        <svg class="search">
           <title>Icon: Search</title>
           <use xlink:href="./static/icons/sprite.svg#search"></use>
         </svg>
-        <a href="./pages/contacts.html">Contact Us</a>
+        <a href="./pages/contacts.html" class="contact">Contact Us</a>
       </div>
     </header>
     <main>
-      <section>
+      <section class="main">
         <div class="container">
-          <span>01</span>
-          <div class="lines"></div>
-          <h1>THE OOH NOO COLLECTION</h1>
-          <span>Designed in Slovenia</span>
-          <button>EXPLORE NOW</button>
-          <img src="./static/img/monster.png" alt="Image: Monster" />
-          <p>
+          <div class="main-background">
+            <span class="count">01</span>
+            <div>
+              <button class="control">
+                <svg class="control__line">
+                  <title>Icon: Line</title>
+                  <use xlink:href="./static/icons/sprite.svg#line"></use>
+                </svg>
+              </button>
+              <button class="control">
+                <svg class="control__line">
+                  <title>Icon: Line</title>
+                  <use xlink:href="./static/icons/sprite.svg#line"></use>
+                </svg>
+              </button>
+              <button class="control">
+                <svg class="control__line">
+                  <title>Icon: Line</title>
+                  <use xlink:href="./static/icons/sprite.svg#line"></use>
+                </svg>
+              </button>
+              <button class="control">
+                <svg class="control__line">
+                  <title>Icon: Line</title>
+                  <use xlink:href="./static/icons/sprite.svg#line"></use>
+                </svg>
+              </button>
+            </div>
+            <h1 class="title">THE OOH NOO COLLECTION</h1>
+            <span class="design">Designed in Slovenia</span>
+            <button type="submit" class="button">EXPLORE NOW</button>
+            <img
+              src="./static/img/monster.png"
+              alt="Image: Monster"
+              class="banner"
+            />
+          </div>
+          <p class="offer">
             Free (continental) USA shipping on all orders of $100 USD or more!
           </p>
         </div>
       </section>
-      <section>
+      <section class="category">
         <div class="container">
-          <h2>Category Products</h2>
-          <ul>
+          <h2 class="subtitle">Category Products</h2>
+          <ul class="category-list">
             <li>
               <img
                 src="./static/img/apparel_kids.jpg"
                 alt="Image: Apparel Kids"
+                class="category-list__item"
               />
-              <a href="#"> <h3>APPAREL KIDS</h3></a>
+              <a href="#"> <h4 class="groups">APPAREL KIDS</h4></a>
             </li>
             <li>
               <img
                 src="./static/img/holiday_shop.jpg"
                 alt="Image: Holiday Shop"
+                class="category-list__item"
               />
-              <a href="#"> <h3>HOLIDAY SHOP</h3></a>
+              <a href="#"> <h4 class="groups">HOLIDAY SHOP</h4></a>
             </li>
             <li>
-              <img src="./static/img/toys.jpg" alt="Image: Toys" />
-              <a href="./pages/toys.html"> <h3>TOYS</h3></a>
+              <img
+                src="./static/img/toys.jpg"
+                alt="Image: Toys"
+                class="category-list__item"
+              />
+              <a href="./pages/toys.html"> <h4 class="groups">TOYS</h4></a>
             </li>
             <li>
               <img
                 src="./static/img/accessories.jpg"
                 alt="Image: Accessories"
+                class="category-list__item"
               />
-              <a href="#"> <h3>ACCESSORIES</h3></a>
+              <a href="#"> <h4 class="groups">ACCESSORIES</h4></a>
             </li>
           </ul>
           <div class="arrows">
-            <button>
-              <svg>
+            <button class="arrows-button">
+              <svg class="arrows-button__icon">
                 <title>Icon: Arrow Prev</title>
                 <use xlink:href="./static/icons/sprite.svg#arrow_prev"></use>
               </svg></button
-            ><button>
-              <svg>
+            ><button class="arrows-button">
+              <svg class="arrows-button__icon">
                 <title>Icon: Arrow Next</title>
                 <use xlink:href="./static/icons/sprite.svg#arrow_next"></use>
               </svg>
             </button>
           </div>
-          <p>
+          <p class="info">
             Modern finds for the modern home. Curated goods by unique designers
             around the world from fashion to furniture for kids and adults.
           </p>
         </div>
       </section>
-      <section>
+      <section class="delivery">
         <div class="container">
-          <img src="./static/img/delivery.jpg" alt="Image: Delivery" />
-          <h2>Delivery</h2>
-          <nav>
-            <ul>
-              <li><a href="#">Delivery</a></li>
-              <li><a href="#">Guarantee</a></li>
-              <li><a href="#">Credit</a></li>
-            </ul>
-          </nav>
-          <p>
+          <img
+            src="./static/img/delivery.jpg"
+            alt="Image: Delivery"
+            class="delivery-image"
+          />
+          <h2 class="subtitle">Delivery</h2>
+          <ul>
+            <li><h3 class="italic">Delivery</h3></li>
+            <li><h3 class="italic">Guarantee</h3></li>
+            <li><h3 class="italic">Credit</h3></li>
+          </ul>
+          <p class="info">
             Some days i feel like i've been working on dlk my entire life and
             there are other days that i am completely shocked that four years
             have flown by. It's simply magical.
           </p>
-          <p>
+          <p class="info">
             What started as an outlet to deal with the traumatic loss of my
             husband, dlk has now become a truly happy place for me and i have
             you and all of the beautiful designers that we work with to thank!
           </p>
-          <a href="#">LEARN MORE</a>
+          <a href="#" class="button button-link">LEARN MORE</a>
         </div>
       </section>
-      <section>
+      <section class="awards">
         <div class="container">
-          <!-- Сделать потом display: none-->
-          <h2>Awards</h2>
-          <!-- -->
+          <h2 class="hidden">Awards</h2>
           <ul>
             <li><img src="./static/img/mailru.png" alt="Image: Mail Ru" /></li>
             <li><img src="./static/img/apple.png" alt="Image: Apple" /></li>
@@ -139,18 +189,18 @@
       </section>
       <div class="container">
         <section>
-          <h2>Design Life Kids</h2>
-          <span>About Us</span>
-          <p>
+          <h2 class="subtitle">Design Life Kids</h2>
+          <span class="italic">About Us</span>
+          <p class="info">
             Some days i feel like i've been working on dlk my entire life and
             there are other days that i am completely shocked that four years
             have flown by. It's simply magical.
           </p>
-          <a href="#">buy now</a>
+          <a href="#" class="button button-link">buy now</a>
         </section>
         <section>
-          <h2>Contacts</h2>
-          <p>
+          <h2 class="subtitle">Contacts</h2>
+          <p class="info">
             Some days i feel like i've been working on dlk my entire life and
             there are other days that i am completely shocked that four years
             have flown by. It's simply magical.
@@ -159,71 +209,94 @@
         </section>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
         <section>
-          <h4>Navigation</h4>
+          <h5 class="footer-title">Navigation</h5>
           <nav>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Design Services</a></li>
-              <li><a href="#">Featured On</a></li>
-              <li><a href="#">2018 Holiday Catalog</a></li>
-              <li><a href="#">Shop By Designer</a></li>
+              <li><a href="#" class="footer-nav__link">About Us</a></li>
+              <li><a href="#" class="footer-nav__link">Blog</a></li>
+              <li><a href="#" class="footer-nav__link">Design Services</a></li>
+              <li><a href="#" class="footer-nav__link">Featured On</a></li>
+              <li>
+                <a href="#" class="footer-nav__link">2018 Holiday Catalog</a>
+              </li>
+              <li><a href="#" class="footer-nav__link">Shop By Designer</a></li>
             </ul>
           </nav>
         </section>
         <section>
-          <h4>Customer Information</h4>
+          <h5 class="footer-title">Customer Information</h5>
           <nav>
             <ul>
-              <li><a href="./pages/contacts.html">Contact Us</a></li>
-              <li><a href="#">Sale Exclusions</a></li>
-              <li><a href="#">Shipping & Returns</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Search</a></li>
+              <li>
+                <a href="./pages/contacts.html" class="footer-nav__link"
+                  >Contact Us</a
+                >
+              </li>
+              <li><a href="#" class="footer-nav__link">Sale Exclusions</a></li>
+              <li>
+                <a href="#" class="footer-nav__link">Shipping & Returns</a>
+              </li>
+              <li>
+                <a href="#" class="footer-nav__link">Terms & Conditions</a>
+              </li>
+              <li><a href="#" class="footer-nav__link">Privacy Policy</a></li>
+              <li><a href="#" class="footer-nav__link">Search</a></li>
             </ul>
           </nav>
         </section>
         <section>
-          <h4>Connect</h4>
+          <h5 class="footer-title">Connect</h5>
           <form action="#">
             <div>
               <label for="input-email-footer"></label>
-              <input type="email" id="input-email-footer" placeholder="Email" />
-              <button type="submit">Join</button>
+              <input
+                type="email"
+                id="input-email-footer"
+                placeholder="Email"
+                class="footer-input"
+              />
+              <button type="submit" class="button">Join</button>
             </div>
           </form>
           <ul>
             <li>
-              <a href="https://www.facebook.com/" target="_blank">
-                <svg>
+              <a
+                href="https://www.facebook.com/"
+                class="social"
+                target="_blank"
+              >
+                <svg class="social">
                   <title>Icon: Facebook</title>
                   <use xlink:href="./static/icons/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/" target="_blank">
-                <svg>
+              <a href="https://twitter.com/" class="social" target="_blank">
+                <svg class="social__icon">
                   <title>Icon: Twitter</title>
                   <use xlink:href="./static/icons/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://pinterest.com/" target="_blank">
-                <svg>
+              <a href="https://pinterest.com/" class="social" target="_blank">
+                <svg class="social__icon">
                   <title>Icon: Pinterest</title>
                   <use xlink:href="./static/icons/sprite.svg#pinterest"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/" target="_blank">
-                <svg>
+              <a
+                href="https://www.instagram.com/"
+                class="social"
+                target="_blank"
+              >
+                <svg class="social__icon">
                   <title>Icon: instagram</title>
                   <use xlink:href="./static/icons/sprite.svg#instagram"></use>
                 </svg>
@@ -239,51 +312,66 @@
           <input type="radio" name="star" value="4" aria-label="Хорошо" />
           <input type="radio" name="star" value="5" aria-label="Отлично" />
         </fieldset>
-        <span>Copyright © 2018 Dlk • Design Life Kids</span>
-        <span>Web Design — Direct Line Development</span>
+        <span class="footer-bottom"
+          >Copyright © 2018 Dlk • Design Life Kids</span
+        >
+        <span class="footer-bottom footer-bottom--light"
+          >Web Design — Direct Line Development</span
+        >
       </div>
     </footer>
     <section class="popup">
       <!-- Сделать потом display: none-->
-      <h1>EXPLORE NOW</h1>
+      <h1 class="hidden">EXPLORE NOW</h1>
       <!-- -->
       <!-- Синяя подложка -->
       <div class="overlay"></div>
       <!-- -->
       <div class="dialog">
-        <button>
-          <svg>
+        <button class="close-button">
+          <svg class="close-button__icon">
             <title>Icon: Close Button</title>
             <use xlink:href="./static/icons/sprite.svg#close"></use>
           </svg>
         </button>
-        <form action="#">
+        <form action="#" class="form">
           <div>
-            <label for="input-name-popup">Name</label>
-            <input type="text" id="input-name-popup" />
+            <label for="input-name-popup" class="form__label">Name</label>
+            <input type="text" id="input-name-popup" class="form__input name" />
           </div>
           <div>
             <div>
-              <label for="input-phone-popup">Phone</label>
-              <input type="tel" id="input-phone-popup" />
+              <label for="input-phone-popup" class="form__label">Phone</label>
+              <input
+                type="tel"
+                id="input-phone-popup"
+                class="form__input phone"
+              />
             </div>
             <div>
-              <label for="input-email-popup">Email</label>
-              <input type="email" id="input-email-popup" />
+              <label for="input-email-popup" class="form__label">Email</label>
+              <input
+                type="email"
+                id="input-email-popup"
+                class="form__input email"
+              />
             </div>
           </div>
           <div>
-            <label for="input-message-popup">Message</label>
-            <textarea id="input-message-popup" cols="30" rows="10"></textarea>
+            <label for="input-message-popup" class="form__label">Message</label>
+            <textarea
+              id="input-message-popup"
+              class="form__input message"
+            ></textarea>
           </div>
           <div>
             <input type="checkbox" id="input-personal-popup" />
-            <label for="input-personal-popup"
+            <label for="input-personal-popup" class="form__personal"
               >By clicking on the button, you consent to the processing of your
               personal data</label
             >
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit" class="button">Submit</button>
         </form>
       </div>
     </section>
