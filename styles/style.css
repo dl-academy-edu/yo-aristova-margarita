@@ -83,9 +83,31 @@
   z-index: 3;
 }
 
+.category-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 30px 0;
+}
+
+.category-list-wrapper {
+  position: relative;
+}
+
 .category-list__item {
   width: 280px;
   height: 270px;
+}
+
+.arrows-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  max-width: 680px;
+}
+
+.arrows {
+  display: flex;
+  column-gap: 6px;
 }
 
 .arrows-button {
