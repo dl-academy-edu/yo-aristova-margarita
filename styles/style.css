@@ -151,3 +151,9 @@
   row-gap: 15px;
   margin-bottom: 26px;
 }
+
+.awards-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
