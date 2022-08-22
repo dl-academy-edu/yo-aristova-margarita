@@ -38,6 +38,8 @@ a {
 
 fieldset {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -259,11 +261,33 @@ fieldset {
   margin-top: 50px;
 }
 
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
+}
+
 .footer-title {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
   color: #aaaaaa;
+  margin-bottom: 23px;
+}
+
+.footer-section {
+  width: 380px;
+}
+
+.footer-lines {
+  border-bottom: 1px solid #666666;
+  margin-bottom: 28px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 }
 
 .footer-nav__link,
@@ -275,8 +299,12 @@ fieldset {
   color: #ffffff;
 }
 
+.footer-form {
+  display: flex;
+}
+
 .footer-input {
-  width: 380px;
+  width: 300px;
   min-height: 40px;
   background: #666666;
   border: none;
@@ -291,15 +319,35 @@ fieldset {
   padding-left: 15px;
 }
 
-.social {
+.social-list {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 25px;
+}
+
+.social-list__link {
   display: block;
   width: 30px;
   height: 30px;
 }
 
-.social__icon {
+.social-list__icon {
   width: inherit;
   height: inherit;
+}
+
+.footer-bottom-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #666666;
+  padding-top: 23px;
+}
+
+.rating,
+.footer-bottom {
+  width: 380px;
 }
 
 .footer-bottom--light {
