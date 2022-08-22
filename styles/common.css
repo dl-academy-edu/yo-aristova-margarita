@@ -11,11 +11,6 @@ body {
   margin: 0;
 }
 
-.container {
-  max-width: 1180px;
-  margin: auto;
-}
-
 h1,
 h2,
 h3,
@@ -43,6 +38,16 @@ a {
 
 fieldset {
   border: none;
+}
+
+.container {
+  max-width: 1180px;
+  margin: auto;
+}
+
+.container-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .section {
@@ -146,6 +151,7 @@ fieldset {
   color: #ffffff;
   background: #000;
   border: none;
+  max-width: max-content;
   padding: 9px 22px;
   cursor: pointer;
 }
@@ -161,6 +167,10 @@ fieldset {
 
 .header {
   margin: 50px 0 40px 0;
+}
+
+.header--big {
+  margin-bottom: 129px;
 }
 
 .header-wrapper {

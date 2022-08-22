@@ -5,8 +5,18 @@
   margin-bottom: 90px;
 }
 
+.main {
+  position: relative;
+}
+
 .main-background {
+  display: flex;
+  column-gap: 44px;
   background: #eee4db;
+}
+
+.count-wrapper {
+  margin: 17px 0 10px 28px;
 }
 
 .count {
@@ -15,6 +25,13 @@
   font-size: 60px;
   line-height: 73px;
   color: rgba(30, 6, 6, 0.05);
+}
+
+.control-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+  width: 31px;
 }
 
 .control {
@@ -31,6 +48,14 @@
   height: inherit;
 }
 
+.main-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  max-width: 307px;
+  margin: 89px 0 89px 0;
+}
+
 .design {
   font-family: "Crimson Text", sans-serif;
   font-style: italic;
@@ -40,8 +65,10 @@
 }
 
 .banner {
+  position: absolute;
+  top: -89px;
+  right: 460px;
   width: 636px;
-  height: 461px;
 }
 
 .offer {
@@ -53,6 +80,7 @@
   color: #ffffff;
   background: #c29974;
   padding: 11px 0;
+  z-index: 3;
 }
 
 .category-list__item {
