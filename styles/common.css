@@ -166,7 +166,7 @@ fieldset {
 
 .button-link {
   display: block;
-  max-width: 149px;
+  max-width: max-content;
 }
 
 .header {
