@@ -123,7 +123,31 @@
   height: inherit;
 }
 
+.delivery-wrapper {
+  display: flex;
+  column-gap: 60px;
+}
+
 .delivery-image {
   width: 480px;
-  height: 559px;
+}
+
+.delivery-info {
+  max-width: 540px;
+  padding-left: 60px;
+  margin: 30px 0 57px 0;
+}
+
+.delivery-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  margin: 17px 0 29px 0;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-bottom: 26px;
 }
