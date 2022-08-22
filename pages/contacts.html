@@ -18,32 +18,38 @@
   <body>
     <header class="header">
       <div class="container">
-        <a href="../index.html" class="logo">
-          <svg class="logo__image">
-            <title>Icon: Logo</title>
-            <use xlink:href="../static/icons/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <nav class="header-nav">
-          <ul>
-            <li>
-              <a href="#" class="header-nav__link">Blog</a>
-            </li>
-            <li>
-              <a href="../pages/catalog.html" class="header-nav__link"
-                >Catalog</a
-              >
-            </li>
-            <li>
-              <a href="#" class="header-nav__link">About Us</a>
-            </li>
-          </ul>
-        </nav>
-        <svg class="search">
-          <title>Icon: Search</title>
-          <use xlink:href="../static/icons/sprite.svg#search"></use>
-        </svg>
-        <a href="../pages/contacts.html" class="contact">Contact Us</a>
+        <div class="header-wrapper">
+          <div class="links-wrapper">
+            <a href="../index.html" class="logo">
+              <svg class="logo__image">
+                <title>Icon: Logo</title>
+                <use xlink:href="../static/icons/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <nav>
+              <ul class="header-nav">
+                <li>
+                  <a href="#" class="header-nav__link">Blog</a>
+                </li>
+                <li>
+                  <a href="../pages/catalog.html" class="header-nav__link"
+                    >Catalog</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header-nav__link">About Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="search-wrapper">
+            <svg class="search">
+              <title>Icon: Search</title>
+              <use xlink:href="../static/icons/sprite.svg#search"></use>
+            </svg>
+            <a href="../pages/contacts.html" class="contact">Contact Us</a>
+          </div>
+        </div>
       </div>
     </header>
     <main>

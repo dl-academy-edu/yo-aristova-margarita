@@ -163,10 +163,22 @@ fieldset {
   margin: 50px 0 40px 0;
 }
 
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.links-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   display: block;
   width: 100px;
   height: 52px;
+  margin-right: 60px;
 }
 
 .logo__image {
@@ -174,11 +186,23 @@ fieldset {
   height: inherit;
 }
 
+.header-nav {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
 .header-nav__link,
 .contact {
   font-size: 14px;
   line-height: 19px;
   text-transform: uppercase;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
 }
 
 .search {
