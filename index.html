@@ -17,79 +17,89 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header header--big">
       <div class="container">
-        <a href="./index.html" class="logo">
-          <svg class="logo__image">
-            <title>Icon: Logo</title>
-            <use xlink:href="./static/icons/sprite.svg#logo"></use>
-          </svg>
-        </a>
-        <nav class="header-nav">
-          <ul>
-            <li>
-              <a href="#" class="header-nav__link">Blog</a>
-            </li>
-            <li>
-              <a href="./pages/catalog.html" class="header-nav__link"
-                >Catalog</a
-              >
-            </li>
-            <li>
-              <a href="#" class="header-nav__link">About Us</a>
-            </li>
-          </ul>
-        </nav>
-        <svg class="search">
-          <title>Icon: Search</title>
-          <use xlink:href="./static/icons/sprite.svg#search"></use>
-        </svg>
-        <a href="./pages/contacts.html" class="contact">Contact Us</a>
+        <div class="header-wrapper">
+          <div class="links-wrapper">
+            <a href="./index.html" class="logo">
+              <svg class="logo__image">
+                <title>Icon: Logo</title>
+                <use xlink:href="./static/icons/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <nav>
+              <ul class="header-nav">
+                <li>
+                  <a href="#" class="header-nav__link">Blog</a>
+                </li>
+                <li>
+                  <a href="./pages/catalog.html" class="header-nav__link"
+                    >Catalog</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="header-nav__link">About Us</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="search-wrapper">
+            <svg class="search">
+              <title>Icon: Search</title>
+              <use xlink:href="./static/icons/sprite.svg#search"></use>
+            </svg>
+            <a href="./pages/contacts.html" class="contact">Contact Us</a>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <section class="main">
-        <div class="container">
+        <div class="container container-column">
           <div class="main-background">
-            <span class="count">01</span>
-            <div>
-              <button class="control">
-                <svg class="control__line">
-                  <title>Icon: Line</title>
-                  <use xlink:href="./static/icons/sprite.svg#line"></use>
-                </svg>
-              </button>
-              <button class="control">
-                <svg class="control__line">
-                  <title>Icon: Line</title>
-                  <use xlink:href="./static/icons/sprite.svg#line"></use>
-                </svg>
-              </button>
-              <button class="control">
-                <svg class="control__line">
-                  <title>Icon: Line</title>
-                  <use xlink:href="./static/icons/sprite.svg#line"></use>
-                </svg>
-              </button>
-              <button class="control">
-                <svg class="control__line">
-                  <title>Icon: Line</title>
-                  <use xlink:href="./static/icons/sprite.svg#line"></use>
-                </svg>
-              </button>
+            <div class="count-wrapper">
+              <span class="count">01</span>
+              <div class="control-wrapper">
+                <button class="control">
+                  <svg class="control__line">
+                    <title>Icon: Line</title>
+                    <use xlink:href="./static/icons/sprite.svg#line"></use>
+                  </svg>
+                </button>
+                <button class="control">
+                  <svg class="control__line">
+                    <title>Icon: Line</title>
+                    <use xlink:href="./static/icons/sprite.svg#line"></use>
+                  </svg>
+                </button>
+                <button class="control">
+                  <svg class="control__line">
+                    <title>Icon: Line</title>
+                    <use xlink:href="./static/icons/sprite.svg#line"></use>
+                  </svg>
+                </button>
+                <button class="control">
+                  <svg class="control__line">
+                    <title>Icon: Line</title>
+                    <use xlink:href="./static/icons/sprite.svg#line"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <h1 class="title">THE OOH NOO COLLECTION</h1>
-            <span class="design">Designed in Slovenia</span>
-            <button type="submit" class="button">EXPLORE NOW</button>
-            <img
-              src="./static/img/monster.png"
-              alt="Image: Monster"
-              class="banner"
-            />
+            <div class="main-info">
+              <h1 class="title">THE OOH NOO COLLECTION</h1>
+              <span class="designed">Designed in Slovenia</span>
+              <button type="submit" class="button">EXPLORE NOW</button>
+            </div>
           </div>
           <p class="offer">
             Free (continental) USA shipping on all orders of $100 USD or more!
           </p>
+          <img
+            src="./static/img/monster.png"
+            alt="Image: Monster"
+            class="banner"
+          />
         </div>
       </section>
       <section class="category">
@@ -97,88 +107,107 @@
           <h2 class="subtitle">Category Products</h2>
           <ul class="category-list">
             <li>
-              <img
-                src="./static/img/apparel_kids.jpg"
-                alt="Image: Apparel Kids"
-                class="category-list__item"
-              />
-              <a href="#"> <h4 class="groups">APPAREL KIDS</h4></a>
+              <div class="category-list-wrapper">
+                <img
+                  src="./static/img/apparel_kids.jpg"
+                  alt="Image: Apparel Kids"
+                  class="category-list__item"
+                /><a href="#"> <h4 class="groups">APPAREL KIDS</h4></a>
+              </div>
             </li>
             <li>
-              <img
-                src="./static/img/holiday_shop.jpg"
-                alt="Image: Holiday Shop"
-                class="category-list__item"
-              />
-              <a href="#"> <h4 class="groups">HOLIDAY SHOP</h4></a>
+              <div class="category-list-wrapper">
+                <img
+                  src="./static/img/holiday_shop.jpg"
+                  alt="Image: Holiday Shop"
+                  class="category-list__item"
+                />
+                <a href="#"> <h4 class="groups">HOLIDAY SHOP</h4></a>
+              </div>
             </li>
             <li>
-              <img
-                src="./static/img/toys.jpg"
-                alt="Image: Toys"
-                class="category-list__item"
-              />
-              <a href="./pages/toys.html"> <h4 class="groups">TOYS</h4></a>
+              <div class="category-list-wrapper">
+                <img
+                  src="./static/img/toys.jpg"
+                  alt="Image: Toys"
+                  class="category-list__item"
+                />
+                <a href="./pages/toys.html"> <h4 class="groups">TOYS</h4></a>
+              </div>
             </li>
             <li>
-              <img
-                src="./static/img/accessories.jpg"
-                alt="Image: Accessories"
-                class="category-list__item"
-              />
-              <a href="#"> <h4 class="groups">ACCESSORIES</h4></a>
+              <div class="category-list-wrapper">
+                <img
+                  src="./static/img/accessories.jpg"
+                  alt="Image: Accessories"
+                  class="category-list__item"
+                />
+                <a href="#"> <h4 class="groups">ACCESSORIES</h4></a>
+              </div>
             </li>
           </ul>
-          <div class="arrows">
-            <button class="arrows-button">
-              <svg class="arrows-button__icon">
-                <title>Icon: Arrow Prev</title>
-                <use xlink:href="./static/icons/sprite.svg#arrow_prev"></use>
-              </svg></button
-            ><button class="arrows-button">
-              <svg class="arrows-button__icon">
-                <title>Icon: Arrow Next</title>
-                <use xlink:href="./static/icons/sprite.svg#arrow_next"></use>
-              </svg>
-            </button>
+          <div class="arrows-wrapper">
+            <div class="arrows">
+              <button class="arrows-button">
+                <svg class="arrows-button__icon">
+                  <title>Icon: Arrow Prev</title>
+                  <use xlink:href="./static/icons/sprite.svg#arrow_prev"></use>
+                </svg></button
+              ><button class="arrows-button">
+                <svg class="arrows-button__icon">
+                  <title>Icon: Arrow Next</title>
+                  <use xlink:href="./static/icons/sprite.svg#arrow_next"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="info">
+              Modern finds for the modern home. Curated goods by unique
+              designers around the world from fashion to furniture for kids and
+              adults.
+            </p>
           </div>
-          <p class="info">
-            Modern finds for the modern home. Curated goods by unique designers
-            around the world from fashion to furniture for kids and adults.
-          </p>
         </div>
       </section>
       <section class="delivery">
         <div class="container">
-          <img
-            src="./static/img/delivery.jpg"
-            alt="Image: Delivery"
-            class="delivery-image"
-          />
-          <h2 class="subtitle">Delivery</h2>
-          <ul>
-            <li><h3 class="italic">Delivery</h3></li>
-            <li><h3 class="italic">Guarantee</h3></li>
-            <li><h3 class="italic">Credit</h3></li>
-          </ul>
-          <p class="info">
-            Some days i feel like i've been working on dlk my entire life and
-            there are other days that i am completely shocked that four years
-            have flown by. It's simply magical.
-          </p>
-          <p class="info">
-            What started as an outlet to deal with the traumatic loss of my
-            husband, dlk has now become a truly happy place for me and i have
-            you and all of the beautiful designers that we work with to thank!
-          </p>
-          <a href="#" class="button button-link">LEARN MORE</a>
+          <div class="delivery-wrapper">
+            <img
+              src="./static/img/delivery.jpg"
+              alt="Image: Delivery"
+              class="delivery-image"
+            />
+            <div class="delivery-info">
+              <h2 class="subtitle">Delivery</h2>
+              <ul class="delivery-list">
+                <li><h3 class="italic">Delivery</h3></li>
+                <li><h3 class="italic">Guarantee</h3></li>
+                <li><h3 class="italic">Credit</h3></li>
+              </ul>
+              <div class="info-wrapper">
+                <p class="info">
+                  Some days i feel like i've been working on dlk my entire life
+                  and there are other days that i am completely shocked that
+                  four years have flown by. It's simply magical.
+                </p>
+                <p class="info">
+                  What started as an outlet to deal with the traumatic loss of
+                  my husband, dlk has now become a truly happy place for me and
+                  i have you and all of the beautiful designers that we work
+                  with to thank!
+                </p>
+              </div>
+              <a href="#" class="button button-link">LEARN MORE</a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="awards">
         <div class="container">
           <h2 class="hidden">Awards</h2>
-          <ul>
-            <li><img src="./static/img/mailru.png" alt="Image: Mail Ru" /></li>
+          <ul class="awards-list">
+            <li>
+              <img src="./static/img/mailru.png" alt="Image: Mail Ru" />
+            </li>
             <li><img src="./static/img/apple.png" alt="Image: Apple" /></li>
             <li><img src="./static/img/eltex.png" alt="Image: Eltex" /></li>
             <li>
@@ -188,142 +217,181 @@
         </div>
       </section>
       <div class="container">
-        <section>
-          <h2 class="subtitle">Design Life Kids</h2>
-          <span class="italic">About Us</span>
-          <p class="info">
-            Some days i feel like i've been working on dlk my entire life and
-            there are other days that i am completely shocked that four years
-            have flown by. It's simply magical.
-          </p>
-          <a href="#" class="button button-link">buy now</a>
-        </section>
-        <section>
-          <h2 class="subtitle">Contacts</h2>
-          <p class="info">
-            Some days i feel like i've been working on dlk my entire life and
-            there are other days that i am completely shocked that four years
-            have flown by. It's simply magical.
-          </p>
-          <div>Map</div>
-        </section>
+        <div class="about-wrapper">
+          <div class="design-overlay"></div>
+          <div class="contacts-overlay"></div>
+          <section class="design">
+            <h2 class="subtitle">Design Life Kids</h2>
+            <span class="italic">About Us</span>
+            <p class="info">
+              Some days i feel like i've been working on dlk my entire life and
+              there are other days that i am completely shocked that four years
+              have flown by. It's simply magical.
+            </p>
+            <a href="#" class="button button-link button-margin">buy now</a>
+          </section>
+          <section class="contacts">
+            <h2 class="subtitle">Contacts</h2>
+            <p class="info">
+              Some days i feel like i've been working on dlk my entire life and
+              there are other days that i am completely shocked that four years
+              have flown by. It's simply magical.
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5508789216715!2d49.288043615981344!3d53.51221786997473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1661177956763!5m2!1sru!2sru"
+              width="483"
+              height="196"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="map"
+            ></iframe>
+          </section>
+        </div>
       </div>
     </main>
     <footer class="footer">
       <div class="container">
-        <section>
-          <h5 class="footer-title">Navigation</h5>
-          <nav>
-            <ul>
-              <li><a href="#" class="footer-nav__link">About Us</a></li>
-              <li><a href="#" class="footer-nav__link">Blog</a></li>
-              <li><a href="#" class="footer-nav__link">Design Services</a></li>
-              <li><a href="#" class="footer-nav__link">Featured On</a></li>
+        <div class="footer-wrapper">
+          <section class="footer-section">
+            <h5 class="footer-title">Navigation</h5>
+            <div class="footer-lines"></div>
+            <nav>
+              <ul class="footer-nav">
+                <li><a href="#" class="footer-nav__link">About Us</a></li>
+                <li><a href="#" class="footer-nav__link">Blog</a></li>
+                <li>
+                  <a href="#" class="footer-nav__link">Design Services</a>
+                </li>
+                <li><a href="#" class="footer-nav__link">Featured On</a></li>
+                <li>
+                  <a href="#" class="footer-nav__link">2018 Holiday Catalog</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav__link">Shop By Designer</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <section class="footer-section">
+            <h5 class="footer-title">Customer Information</h5>
+            <div class="footer-lines"></div>
+            <nav>
+              <ul class="footer-nav">
+                <li>
+                  <a href="./pages/contacts.html" class="footer-nav__link"
+                    >Contact Us</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer-nav__link">Sale Exclusions</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav__link">Shipping & Returns</a>
+                </li>
+                <li>
+                  <a href="#" class="footer-nav__link">Terms & Conditions</a>
+                </li>
+                <li><a href="#" class="footer-nav__link">Privacy Policy</a></li>
+                <li><a href="#" class="footer-nav__link">Search</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section class="footer-section">
+            <h5 class="footer-title">Connect</h5>
+            <div class="footer-lines"></div>
+            <form action="#">
+              <div class="footer-form">
+                <label for="input-email-footer"></label>
+                <input
+                  type="email"
+                  id="input-email-footer"
+                  placeholder="Email"
+                  class="footer-input"
+                />
+                <button type="submit" class="button">Join</button>
+              </div>
+            </form>
+            <ul class="social-list">
               <li>
-                <a href="#" class="footer-nav__link">2018 Holiday Catalog</a>
-              </li>
-              <li><a href="#" class="footer-nav__link">Shop By Designer</a></li>
-            </ul>
-          </nav>
-        </section>
-        <section>
-          <h5 class="footer-title">Customer Information</h5>
-          <nav>
-            <ul>
-              <li>
-                <a href="./pages/contacts.html" class="footer-nav__link"
-                  >Contact Us</a
+                <a
+                  href="https://www.facebook.com/"
+                  class="social-list__link"
+                  target="_blank"
                 >
+                  <svg class="social-list__icon">
+                    <title>Icon: Facebook</title>
+                    <use xlink:href="./static/icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
               </li>
-              <li><a href="#" class="footer-nav__link">Sale Exclusions</a></li>
               <li>
-                <a href="#" class="footer-nav__link">Shipping & Returns</a>
+                <a
+                  href="https://twitter.com/"
+                  class="social-list__link"
+                  target="_blank"
+                >
+                  <svg class="social-list__icon">
+                    <title>Icon: Twitter</title>
+                    <use xlink:href="./static/icons/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#" class="footer-nav__link">Terms & Conditions</a>
+                <a
+                  href="https://pinterest.com/"
+                  class="social-list__link"
+                  target="_blank"
+                >
+                  <svg class="social-list__icon">
+                    <title>Icon: Pinterest</title>
+                    <use xlink:href="./static/icons/sprite.svg#pinterest"></use>
+                  </svg>
+                </a>
               </li>
-              <li><a href="#" class="footer-nav__link">Privacy Policy</a></li>
-              <li><a href="#" class="footer-nav__link">Search</a></li>
+              <li>
+                <a
+                  href="https://www.instagram.com/"
+                  class="social-list__link"
+                  target="_blank"
+                >
+                  <svg class="social-list__icon">
+                    <title>Icon: instagram</title>
+                    <use xlink:href="./static/icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
-          </nav>
-        </section>
-        <section>
-          <h5 class="footer-title">Connect</h5>
-          <form action="#">
-            <div>
-              <label for="input-email-footer"></label>
+          </section>
+        </div>
+        <div class="footer-bottom-wrapper">
+          <fieldset class="rating">
+            <legend class="rating__caption">Company Rating</legend>
+            <div class="rating-group">
+              <input type="radio" name="star" value="1" aria-label="Ужасно" />
+              <input type="radio" name="star" value="2" aria-label="Сносно" />
               <input
-                type="email"
-                id="input-email-footer"
-                placeholder="Email"
-                class="footer-input"
+                type="radio"
+                name="star"
+                value="3"
+                aria-label="Нормально"
               />
-              <button type="submit" class="button">Join</button>
+              <input type="radio" name="star" value="4" aria-label="Хорошо" />
+              <input type="radio" name="star" value="5" aria-label="Отлично" />
             </div>
-          </form>
-          <ul>
-            <li>
-              <a
-                href="https://www.facebook.com/"
-                class="social"
-                target="_blank"
-              >
-                <svg class="social">
-                  <title>Icon: Facebook</title>
-                  <use xlink:href="./static/icons/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/" class="social" target="_blank">
-                <svg class="social__icon">
-                  <title>Icon: Twitter</title>
-                  <use xlink:href="./static/icons/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="https://pinterest.com/" class="social" target="_blank">
-                <svg class="social__icon">
-                  <title>Icon: Pinterest</title>
-                  <use xlink:href="./static/icons/sprite.svg#pinterest"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/"
-                class="social"
-                target="_blank"
-              >
-                <svg class="social__icon">
-                  <title>Icon: instagram</title>
-                  <use xlink:href="./static/icons/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
-        <fieldset class="rating">
-          <legend>Company Rating</legend>
-          <input type="radio" name="star" value="1" aria-label="Ужасно" />
-          <input type="radio" name="star" value="2" aria-label="Сносно" />
-          <input type="radio" name="star" value="3" aria-label="Нормально" />
-          <input type="radio" name="star" value="4" aria-label="Хорошо" />
-          <input type="radio" name="star" value="5" aria-label="Отлично" />
-        </fieldset>
-        <span class="footer-bottom"
-          >Copyright © 2018 Dlk • Design Life Kids</span
-        >
-        <span class="footer-bottom footer-bottom--light"
-          >Web Design — Direct Line Development</span
-        >
+          </fieldset>
+          <span class="footer-bottom"
+            >Copyright © 2018 Dlk • Design Life Kids</span
+          >
+          <span class="footer-bottom footer-bottom--light"
+            >Web Design — Direct Line Development</span
+          >
+        </div>
       </div>
     </footer>
     <section class="popup">
-      <!-- Сделать потом display: none-->
       <h1 class="hidden">EXPLORE NOW</h1>
-      <!-- -->
       <!-- Синяя подложка -->
       <div class="overlay"></div>
       <!-- -->
