@@ -273,15 +273,12 @@ fieldset {
   line-height: 22px;
   color: #aaaaaa;
   margin-bottom: 23px;
+  border-bottom: 1px solid #666666;
+  padding-bottom: 28px;
 }
 
 .footer-section {
   width: 380px;
-}
-
-.footer-lines {
-  border-bottom: 1px solid #666666;
-  margin-bottom: 28px;
 }
 
 .footer-nav {
