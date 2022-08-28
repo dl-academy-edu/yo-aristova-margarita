@@ -269,12 +269,31 @@ fieldset {
   margin-left: 20px;
 }
 
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  max-width: 234px;
+  margin: auto;
+}
+
 .pagination__link {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.arrow__icon {
+  width: inherit;
+  height: inherit;
 }
 
 .footer {

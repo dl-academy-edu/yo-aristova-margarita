@@ -19,15 +19,3 @@
   font-size: 14px;
   line-height: 19px;
 }
-
-.arrow {
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  cursor: pointer;
-}
-
-.arrow__icon {
-  width: inherit;
-  height: inherit;
-}
