@@ -364,6 +364,16 @@ fieldset {
   padding-top: 23px;
 }
 
+.rating {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.rating__caption {
+  float: left;
+}
+
 .rating,
 .footer-bottom {
   width: 380px;
