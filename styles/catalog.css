@@ -1,4 +1,40 @@
-.catalog,
 .description {
   margin-bottom: 55px;
+}
+
+.catalog {
+  margin: 60px 0 50px 0;
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 23px;
+  max-width: 1080px;
+}
+
+.catalog-wrapper {
+  display: flex;
+  column-gap: 20px;
+}
+
+.catalog-wrapper--end {
+  justify-content: flex-end;
+}
+
+.catalog-list-wrapper {
+  position: relative;
+}
+
+.description-wrapper {
+  max-width: 680px;
+  margin-left: 200px;
+}
+
+.description-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-top: 25px;
 }
