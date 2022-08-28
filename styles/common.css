@@ -53,8 +53,13 @@ fieldset {
 }
 
 .section {
-  margin-top: 20px;
-  border-bottom: 60px;
+  margin: 60px 0 60px 0;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .form {
@@ -83,6 +88,13 @@ fieldset {
 .name {
   width: 600px;
   min-height: 50px;
+}
+.name::placeholder {
+  padding-left: 20px;
+}
+
+.phone-email {
+  display: flex;
 }
 
 .phone,
