@@ -286,11 +286,16 @@ fieldset {
   margin-left: 20px;
 }
 
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .pagination {
   display: flex;
   justify-content: space-between;
-  max-width: 234px;
-  margin: auto;
+  width: 234px;
 }
 
 .pagination__link {
@@ -305,12 +310,15 @@ fieldset {
   width: 30px;
   height: 30px;
   padding: 0;
+  background: transparent;
+  border: none;
   cursor: pointer;
 }
 
 .arrow__icon {
   width: inherit;
   height: inherit;
+  opacity: 0.12;
 }
 
 .footer {
