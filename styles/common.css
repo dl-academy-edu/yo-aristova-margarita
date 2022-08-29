@@ -69,9 +69,17 @@ fieldset {
 }
 
 .form__label {
+  display: inline-block;
   font-size: 14px;
   font-weight: 400;
   line-height: 19px;
+  margin-bottom: 3px;
+}
+
+.form__label--roboto {
+  font-family: "Roboto";
+  line-height: 16px;
+  margin-bottom: 6px;
 }
 
 .form__personal {
@@ -174,8 +182,17 @@ fieldset {
   cursor: pointer;
 }
 
+.button--disable {
+  background: #c1c1c1;
+  cursor: default;
+}
+
 .button:hover {
   background: #c29974;
+}
+
+.button--disable:hover {
+  background: #c1c1c1;
 }
 
 .button-link {
