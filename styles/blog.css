@@ -1,8 +1,13 @@
+.blog {
+  margin-bottom: 60px;
+}
+
 .blog-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 40px;
+  row-gap: 32px;
+  margin-bottom: 40px;
 }
 
 .blog-list__item {

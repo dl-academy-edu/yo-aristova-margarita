@@ -163,6 +163,7 @@
   position: relative;
   display: flex;
   column-gap: 87px;
+  margin-bottom: 45px;
 }
 
 .design,
