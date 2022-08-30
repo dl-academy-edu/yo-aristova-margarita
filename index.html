@@ -218,8 +218,6 @@
       </section>
       <div class="container">
         <div class="about-wrapper">
-          <div class="design-overlay"></div>
-          <div class="contacts-overlay"></div>
           <section class="design">
             <h2 class="subtitle">Design Life Kids</h2>
             <span class="italic">About Us</span>
@@ -256,7 +254,6 @@
         <div class="footer-wrapper">
           <section class="footer-section">
             <h5 class="footer-title">Navigation</h5>
-            <div class="footer-lines"></div>
             <nav>
               <ul class="footer-nav">
                 <li><a href="#" class="footer-nav__link">About Us</a></li>
@@ -369,16 +366,42 @@
           <fieldset class="rating">
             <legend class="rating__caption">Company Rating</legend>
             <div class="rating-group">
-              <input type="radio" name="star" value="1" aria-label="Ужасно" />
-              <input type="radio" name="star" value="2" aria-label="Сносно" />
+              <input
+                type="radio"
+                name="star"
+                value="1"
+                aria-label="Ужасно"
+                class="rating__star"
+                checked
+              />
+              <input
+                type="radio"
+                name="star"
+                value="2"
+                aria-label="Сносно"
+                class="rating__star"
+              />
               <input
                 type="radio"
                 name="star"
                 value="3"
                 aria-label="Нормально"
+                class="rating__star"
               />
-              <input type="radio" name="star" value="4" aria-label="Хорошо" />
-              <input type="radio" name="star" value="5" aria-label="Отлично" />
+              <input
+                type="radio"
+                name="star"
+                value="4"
+                aria-label="Хорошо"
+                class="rating__star"
+              />
+              <input
+                type="radio"
+                name="star"
+                value="5"
+                aria-label="Отлично"
+                class="rating__star"
+              />
             </div>
           </fieldset>
           <span class="footer-bottom"
@@ -393,9 +416,9 @@
     <section class="popup">
       <h1 class="hidden">EXPLORE NOW</h1>
       <!-- Синяя подложка -->
-      <div class="overlay"></div>
+      <div class="popup__overlay"></div>
       <!-- -->
-      <div class="dialog">
+      <div class="popup__dialog">
         <button class="close-button">
           <svg class="close-button__icon">
             <title>Icon: Close Button</title>
@@ -403,43 +426,65 @@
           </svg>
         </button>
         <form action="#" class="form">
-          <div>
-            <label for="input-name-popup" class="form__label">Name</label>
-            <input type="text" id="input-name-popup" class="form__input name" />
-          </div>
-          <div>
+          <div class="form-wrapper">
             <div>
-              <label for="input-phone-popup" class="form__label">Phone</label>
+              <label
+                for="input-name-popup"
+                class="form__label form__label--roboto"
+                >Name</label
+              >
               <input
-                type="tel"
-                id="input-phone-popup"
-                class="form__input phone"
+                type="text"
+                id="input-name-popup"
+                class="form__input name"
               />
             </div>
-            <div>
-              <label for="input-email-popup" class="form__label">Email</label>
-              <input
-                type="email"
-                id="input-email-popup"
-                class="form__input email"
-              />
+            <div class="phone-email">
+              <div>
+                <label
+                  for="input-phone-popup"
+                  class="form__label form__label--roboto"
+                  >Phone</label
+                >
+                <input
+                  type="tel"
+                  id="input-phone-popup"
+                  class="form__input phone"
+                />
+              </div>
+              <div>
+                <label
+                  for="input-email-popup"
+                  class="form__label form__label--roboto"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="input-email-popup"
+                  class="form__input email"
+                />
+              </div>
             </div>
+            <div>
+              <label
+                for="input-message-popup"
+                class="form__label form__label--roboto"
+                >Message</label
+              >
+              <textarea
+                id="input-message-popup"
+                class="form__input message"
+              ></textarea>
+            </div>
+            <div class="personal">
+              <input type="checkbox" id="input-personal-popup" />
+              <label for="input-personal-popup" class="form__personal"
+                >By clicking on the button, you consent to the processing of
+                your personal data</label
+              >
+            </div>
+            <button type="submit" class="button button--disable">Submit</button>
           </div>
-          <div>
-            <label for="input-message-popup" class="form__label">Message</label>
-            <textarea
-              id="input-message-popup"
-              class="form__input message"
-            ></textarea>
-          </div>
-          <div>
-            <input type="checkbox" id="input-personal-popup" />
-            <label for="input-personal-popup" class="form__personal"
-              >By clicking on the button, you consent to the processing of your
-              personal data</label
-            >
-          </div>
-          <button type="submit" class="button">Submit</button>
         </form>
       </div>
     </section>

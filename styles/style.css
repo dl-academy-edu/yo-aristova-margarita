@@ -86,6 +86,7 @@
 .category-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 30px 0 30px 0;
 }
 
@@ -162,6 +163,7 @@
   position: relative;
   display: flex;
   column-gap: 87px;
+  margin-bottom: 45px;
 }
 
 .design,
@@ -174,22 +176,28 @@
   margin-left: 30px;
 }
 
-.design-overlay {
+.design::after {
+  content: "";
+  display: block;
   position: absolute;
   top: 25px;
   left: 0;
   width: 543px;
   height: 228px;
   background-color: #e1f0f7;
+  z-index: -1;
 }
 
-.contacts-overlay {
+.contacts::after {
+  content: "";
+  display: block;
   position: absolute;
   top: 25px;
   right: 40px;
   width: 543px;
   height: 209px;
   background-color: #e1f0f7;
+  z-index: -1;
 }
 
 .button-margin {
