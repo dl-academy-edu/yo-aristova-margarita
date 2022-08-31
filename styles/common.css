@@ -124,7 +124,7 @@ fieldset {
 .personal {
   display: flex;
   align-items: center;
-  column-gap: 15px;
+  padding-left: 35px;
 }
 
 .title {
@@ -188,22 +188,34 @@ fieldset {
   cursor: pointer;
 }
 
-.button--disable {
-  background: #c1c1c1;
-  cursor: default;
-}
-
 .button:hover {
   background: #c29974;
 }
 
-.button--disable:hover {
+.button:disabled {
   background: #c1c1c1;
 }
 
 .button-link {
   display: block;
   max-width: max-content;
+}
+
+.checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.check {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  background-image: url("../static/icons/checkbox_off.svg");
+  margin-left: -35px;
+}
+
+.checkbox:checked + .check {
+  background-image: url("../static/icons/checkbox_on.svg");
 }
 
 .header {
