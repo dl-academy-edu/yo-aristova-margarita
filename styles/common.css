@@ -188,16 +188,11 @@ fieldset {
   cursor: pointer;
 }
 
-.button--disable {
-  background: #c1c1c1;
-  cursor: default;
-}
-
 .button:hover {
   background: #c29974;
 }
 
-.button--disable:hover {
+.button:disabled {
   background: #c1c1c1;
 }
 
