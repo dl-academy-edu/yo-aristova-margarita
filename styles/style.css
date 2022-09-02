@@ -6,7 +6,7 @@
 }
 
 .main {
-  position: relative;
+  margin-top: 129px;
 }
 
 .main-background {
@@ -32,6 +32,7 @@
   flex-direction: column;
   row-gap: 11px;
   width: 31px;
+  margin-top: 10px;
 }
 
 .control {
@@ -74,7 +75,7 @@
 .banner {
   position: absolute;
   top: -89px;
-  right: 460px;
+  right: 100px;
   width: 636px;
 }
 
@@ -142,15 +143,28 @@
 
 .delivery-info {
   max-width: 540px;
-  padding-left: 60px;
   margin: 30px 0 57px 0;
+}
+
+.shift {
+  margin-left: 60px;
 }
 
 .delivery-list {
   display: flex;
   flex-direction: column;
-  row-gap: 21px;
-  margin: 17px 0 29px 0;
+  row-gap: 15px;
+  margin: 6px 0 29px 0;
+}
+
+.delivery-list__title {
+  display: inline-block;
+}
+
+.delivery-list__title--checked {
+  font-weight: 700;
+  background-color: rgba(112, 187, 220, 0.2);
+  padding: 11px 178px 10px 60px;
 }
 
 .info-wrapper {
