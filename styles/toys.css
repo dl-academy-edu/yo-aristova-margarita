@@ -14,10 +14,10 @@
 }
 
 .cost {
-  margin-right: 94px;
+  margin-right: 108px;
 }
 
-/* input range start */
+/* input range */
 input[type="range"].styled-slider {
   height: 2em;
   -webkit-appearance: none;
@@ -56,10 +56,9 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
     #808080;
 }
 
-/* input range end */
-
 .input-cost {
   position: relative;
+  width: 188px;
 }
 
 .input-cost::before {
@@ -71,7 +70,7 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
 .input-cost::after {
   position: absolute;
   top: 30px;
-  left: 115px;
+  left: 170px;
   content: "500";
 }
 
@@ -125,6 +124,11 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
 .shipping-list__item {
   display: flex;
   column-gap: 10px;
+}
+
+.color-list__item:hover,
+.shipping-list__item:hover {
+  text-decoration: underline;
 }
 
 .button-apply {

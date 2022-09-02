@@ -364,6 +364,14 @@ fieldset {
   text-transform: uppercase;
 }
 
+.pagination__link:hover {
+  color: #aaaaaa;
+}
+
+.pagination__link--active {
+  color: #c29974;
+}
+
 .arrow {
   width: 30px;
   height: 30px;
