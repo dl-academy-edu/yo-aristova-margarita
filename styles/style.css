@@ -37,6 +37,7 @@
 .control {
   width: 31px;
   height: 3px;
+  border: none;
   margin: 0;
   padding: 0;
   cursor: pointer;
@@ -46,6 +47,12 @@
   display: block;
   width: inherit;
   height: inherit;
+  background-color: #d6cac2;
+}
+
+.control__line:hover,
+.control__line--checked {
+  background-color: rgba(30, 6, 6, 0.6);
 }
 
 .main-info {
