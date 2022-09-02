@@ -124,7 +124,31 @@ fieldset {
 .personal {
   display: flex;
   align-items: center;
-  padding-left: 35px;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-image: url("../static/icons/checkbox_off.svg");
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.checkbox:checked + label::before {
+  background-image: url("../static/icons/checkbox_on.svg");
 }
 
 .title {
@@ -199,23 +223,6 @@ fieldset {
 .button-link {
   display: block;
   max-width: max-content;
-}
-
-.checkbox {
-  position: absolute;
-  appearance: none;
-}
-
-.check {
-  position: absolute;
-  width: 19px;
-  height: 19px;
-  background-image: url("../static/icons/checkbox_off.svg");
-  margin-left: -35px;
-}
-
-.checkbox:checked + .check {
-  background-image: url("../static/icons/checkbox_on.svg");
 }
 
 .header {
