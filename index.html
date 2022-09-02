@@ -61,23 +61,37 @@
               <span class="count">01</span>
               <div class="control-wrapper">
                 <button class="control">
-                  <span class="control__line control__line--checked"></span>
+                  <svg class="control__line">
+                    <title>Icon: Line</title>
+                    <use xlink:href="./static/icons/sprite.svg#line"></use>
+                  </svg>
                 </button>
                 <button class="control">
-                  <span class="control__line"></span>
+                  <svg class="control__line">
+                    <title>Icon: Line</title>
+                    <use xlink:href="./static/icons/sprite.svg#line"></use>
+                  </svg>
                 </button>
                 <button class="control">
-                  <span class="control__line"></span>
+                  <svg class="control__line">
+                    <title>Icon: Line</title>
+                    <use xlink:href="./static/icons/sprite.svg#line"></use>
+                  </svg>
                 </button>
                 <button class="control">
-                  <span class="control__line"></span>
+                  <svg class="control__line">
+                    <title>Icon: Line</title>
+                    <use xlink:href="./static/icons/sprite.svg#line"></use>
+                  </svg>
                 </button>
               </div>
             </div>
             <div class="main-info">
               <h1 class="title">THE OOH NOO COLLECTION</h1>
               <span class="designed">Designed in Slovenia</span>
-              <button class="button popup-button">EXPLORE NOW</button>
+              <button type="button" class="button popup-button">
+                EXPLORE NOW
+              </button>
             </div>
           </div>
           <p class="offer">
@@ -464,18 +478,12 @@
                 class="form__input message"
               ></textarea>
             </div>
-            <div class="personal">
-              <input
-                type="checkbox"
-                class="form__input checkbox"
-                id="input-personal"
-                checked
-              />
-              <label for="input-personal" class="form__label"
-                >By clicking on the button, you consent to the processing of
-                your personal data</label
-              >
-            </div>
+            <label class="personal form__personal">
+              <input type="checkbox" class="form__input checkbox" />
+              <div class="check"></div>
+              By clicking on the button, you consent to the processing of your
+              personal data
+            </label>
             <button type="submit" class="button" disabled>Submit</button>
           </div>
         </form>
