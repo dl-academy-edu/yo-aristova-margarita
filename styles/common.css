@@ -53,10 +53,6 @@ fieldset {
   flex-direction: column;
 }
 
-.section {
-  margin: 60px 0 50px 0;
-}
-
 .form-wrapper {
   display: flex;
   flex-direction: column;
