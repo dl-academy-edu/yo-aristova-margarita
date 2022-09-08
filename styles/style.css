@@ -98,11 +98,11 @@
   margin: 30px 0 30px 0;
 }
 
-.category-list-wrapper {
+.category-list__item {
   position: relative;
 }
 
-.category-list__item {
+.category-list__image {
   width: 280px;
   height: 270px;
 }

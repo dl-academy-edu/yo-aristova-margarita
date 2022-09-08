@@ -217,6 +217,10 @@ fieldset {
   text-align: center;
 }
 
+.groups:hover {
+  text-decoration: underline;
+}
+
 .info {
   font-size: 16px;
   font-weight: 400;

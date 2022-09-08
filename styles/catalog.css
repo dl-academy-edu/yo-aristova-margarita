@@ -19,12 +19,17 @@
   column-gap: 20px;
 }
 
-.catalog-list--end {
-  justify-content: flex-end;
+.catalog-list__item {
+  position: relative;
 }
 
-.catalog-item-wrapper {
-  position: relative;
+.catalog-list__image {
+  width: 280px;
+  height: 270px;
+}
+
+.catalog-list--end {
+  justify-content: flex-end;
 }
 
 .description-wrapper {
