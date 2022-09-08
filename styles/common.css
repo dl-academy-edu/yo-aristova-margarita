@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   background-color: #fff;
@@ -74,7 +74,7 @@ fieldset {
 }
 
 .form__label--roboto {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   line-height: 16px;
   margin-bottom: 6px;
 }
@@ -176,7 +176,7 @@ fieldset {
 }
 
 .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
@@ -184,7 +184,7 @@ fieldset {
 }
 
 .subtitle {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 38px;
   font-weight: 700;
   line-height: 46px;
@@ -196,7 +196,7 @@ fieldset {
 }
 
 .italic {
-  font-family: "Crimson Text", sans-serif;
+  font-family: "Crimson Text", Arial, sans-serif;
   font-style: italic;
   font-size: 26px;
   font-weight: 400;
@@ -323,7 +323,7 @@ fieldset {
 }
 
 .breadcrumbs-list__item {
-  font-family: "Crimson Text", sans-serif;
+  font-family: "Crimson Text", Arial, sans-serif;
   font-style: italic;
   font-size: 20px;
   font-weight: 400;
@@ -353,7 +353,7 @@ fieldset {
 }
 
 .pagination__link {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
