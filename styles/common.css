@@ -427,6 +427,16 @@ fieldset {
   color: #ffffff;
 }
 
+.footer-nav__link:hover,
+.social-list__icon:hover {
+  opacity: 0.5;
+}
+
+.footer-nav__link:active,
+.social-list__icon:active {
+  opacity: 0.2;
+}
+
 .footer-form {
   display: flex;
 }
@@ -492,6 +502,14 @@ fieldset {
   background-repeat: repeat-x;
 }
 
+.rating__caption {
+  float: left;
+}
+
+.rating__caption--hovered {
+  color: #c29974;
+}
+
 .rating__star {
   position: absolute;
   top: 0;
@@ -507,7 +525,15 @@ fieldset {
 }
 
 .rating__star:checked {
-  background-image: url("../static/icons/star-click.svg");
+  background-image: url("../static/icons/star_click.svg");
+}
+
+.rating__star:hover {
+  background-image: url("../static/icons/star_hover.svg");
+}
+
+.rating__star:hover ~ .rating__star {
+  background-image: url("../static/icons/star.svg");
 }
 
 .rating__star:nth-of-type(1) {
@@ -535,10 +561,6 @@ fieldset {
   width: 5em;
 }
 
-.rating__caption {
-  float: left;
-}
-
 .rating,
 .footer-bottom {
   width: 380px;
@@ -546,4 +568,10 @@ fieldset {
 
 .footer-bottom--light {
   color: #a2a2a2;
+}
+
+.footer-bottom--light:hover,
+.footer-bottom--light:active {
+  color: #fff;
+  text-decoration: underline;
 }
