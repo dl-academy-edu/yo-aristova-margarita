@@ -41,3 +41,8 @@
   width: inherit;
   height: inherit;
 }
+
+.close-button__icon:hover,
+.close-button__icon:active {
+  opacity: 0.7;
+}

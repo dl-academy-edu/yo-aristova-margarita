@@ -88,6 +88,12 @@ fieldset {
 .form__input {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.form__input:hover,
+.form__input:focus {
+  border-color: rgba(194, 153, 116, 0.7);
 }
 
 .name {
@@ -245,6 +251,10 @@ fieldset {
   background: #c29974;
 }
 
+.button:active {
+  background: #cfaf91;
+}
+
 .button:disabled {
   background: #c1c1c1;
 }
@@ -372,6 +382,10 @@ fieldset {
   color: #c29974;
 }
 
+.dart {
+  fill: #1e0606;
+}
+
 .arrow {
   width: 30px;
   height: 30px;
@@ -384,7 +398,18 @@ fieldset {
 .arrow__icon {
   width: inherit;
   height: inherit;
+  stroke: #1e0606;
   opacity: 0.12;
+}
+
+.arrow__icon:hover {
+  stroke: #c29974;
+  opacity: 1;
+}
+
+.arrow__icon:active {
+  stroke: #c29974;
+  opacity: 0.7;
 }
 
 .footer {
@@ -447,6 +472,12 @@ fieldset {
   background: #666666;
   border: none;
   box-shadow: none;
+  outline: none;
+}
+
+.footer-input:hover,
+.footer-input:focus {
+  border: 1px solid #fffdfd;
 }
 
 .footer-input::placeholder {

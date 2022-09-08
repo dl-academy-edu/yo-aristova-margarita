@@ -1,9 +1,9 @@
 <svg display="none" xmlns="http://www.w3.org/2000/svg">
   <symbol id="arrow_prev" width="18" height="30" viewBox="0 0 18 30" fill="none">
-    <path d="M16 2L3 15L16 28" stroke="#1E0606" stroke-width="4"/>
+    <path d="M16 2L3 15L16 28" stroke-width="4"/>
   </symbol>
   <symbol id="arrow_next" width="18" height="30" viewBox="0 0 18 30" fill="none">
-    <path d="M2 2L15 15L2 28" stroke="#1E0606" stroke-width="4"/>
+    <path d="M2 2L15 15L2 28" stroke-width="4"/>
   </symbol>
   <symbol id="logo" width="102" height="52" viewBox="0 0 102 52" fill="none">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.997559 0H19.1259C32.1442 0 41.4377 12.3713 41.4377 24.0356V27.7332C41.4377 39.3974 32.1442 51.7689 19.1259 51.7689H0.997559V0ZM38.6487 24.0356C38.6487 13.5132 30.2391 2.77333 19.1259 2.77333H3.78653V48.9956H19.1259C30.2391 48.9956 38.6487 38.2557 38.6487 27.7333V24.0356Z" fill="#1E0606"/>

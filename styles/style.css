@@ -130,6 +130,7 @@
 .arrows-button__icon {
   width: inherit;
   height: inherit;
+  stroke: #1e0606;
 }
 
 .delivery-wrapper {
