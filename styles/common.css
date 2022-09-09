@@ -197,6 +197,10 @@ fieldset {
   text-transform: uppercase;
 }
 
+.subtitle--up {
+  margin-top: -25px;
+}
+
 .hidden {
   display: none;
 }

@@ -183,44 +183,29 @@
 }
 
 .about-wrapper {
-  position: relative;
   display: flex;
-  column-gap: 87px;
+  column-gap: 57px;
+  padding-top: 25px;
   margin-bottom: 45px;
+  min-height: 359px;
 }
 
 .design,
-.contacts {
+.contacts-info {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  z-index: 2;
-  max-width: 483px;
-  margin-left: 30px;
+  width: 543px;
+  height: fit-content;
+  background-color: #e1f0f7;
 }
 
-.design::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 25px;
-  left: 0;
-  width: 543px;
-  height: 228px;
-  background-color: #e1f0f7;
-  z-index: -1;
+.design {
+  padding: 0 30px 27px 30px;
 }
 
-.contacts::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 25px;
-  right: 40px;
-  width: 543px;
-  height: 209px;
-  background-color: #e1f0f7;
-  z-index: -1;
+.contacts-info {
+  padding: 0 30px 102px 30px;
 }
 
 .button-margin {
@@ -228,5 +213,8 @@
 }
 
 .map {
-  margin-top: 30px;
+  position: relative;
+  top: -80px;
+  left: 30px;
+  margin-bottom: -80px;
 }
