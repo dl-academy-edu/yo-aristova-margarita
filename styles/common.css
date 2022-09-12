@@ -400,8 +400,8 @@ fieldset {
 }
 
 .arrow__icon {
-  width: inherit;
-  height: inherit;
+  width: 18px;
+  height: 30px;
   stroke: #1e0606;
   opacity: 0.12;
 }

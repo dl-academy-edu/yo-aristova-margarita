@@ -66,6 +66,7 @@
   top: -89px;
   right: 100px;
   width: 636px;
+  height: 490px;
 }
 .offer {
   font-weight: 700;
@@ -107,10 +108,11 @@
   background: rgba(112, 187, 220, 0.2);
   border: none;
   cursor: pointer;
+  padding: 0;
 }
 .arrows-button__icon {
-  width: inherit;
-  height: inherit;
+  width: 18px;
+  height: 30px;
   stroke: #1e0606;
 }
 .delivery-wrapper {
