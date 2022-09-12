@@ -1,0 +1,10 @@
+var star = document.querySelector(".rating-group");
+var rating = document.querySelector(".rating__caption");
+
+star.addEventListener("mouseover", function () {
+  rating.classList.toggle("rating__caption--hovered");
+});
+
+star.addEventListener("mouseout", function () {
+  rating.classList.toggle("rating__caption--hovered");
+});

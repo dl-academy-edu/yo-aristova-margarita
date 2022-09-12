@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DLK</title>
     <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/common.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/popup.css" />
+    <link rel="stylesheet" href="styles/common.min.css" />
+    <link rel="stylesheet" href="styles/style.min.css" />
+    <link rel="stylesheet" href="styles/popup.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +17,7 @@
     />
   </head>
   <body>
-    <header class="header header--big">
+    <header class="header">
       <div class="container">
         <div class="header-wrapper">
           <div class="links-wrapper">
@@ -30,7 +30,7 @@
             <nav>
               <ul class="header-nav">
                 <li>
-                  <a href="#" class="header-nav__link">Blog</a>
+                  <a href="./pages/blog.html" class="header-nav__link">Blog</a>
                 </li>
                 <li>
                   <a href="./pages/catalog.html" class="header-nav__link"
@@ -61,35 +61,23 @@
               <span class="count">01</span>
               <div class="control-wrapper">
                 <button class="control">
-                  <svg class="control__line">
-                    <title>Icon: Line</title>
-                    <use xlink:href="./static/icons/sprite.svg#line"></use>
-                  </svg>
+                  <span class="control__line control__line--checked"></span>
                 </button>
                 <button class="control">
-                  <svg class="control__line">
-                    <title>Icon: Line</title>
-                    <use xlink:href="./static/icons/sprite.svg#line"></use>
-                  </svg>
+                  <span class="control__line"></span>
                 </button>
                 <button class="control">
-                  <svg class="control__line">
-                    <title>Icon: Line</title>
-                    <use xlink:href="./static/icons/sprite.svg#line"></use>
-                  </svg>
+                  <span class="control__line"></span>
                 </button>
                 <button class="control">
-                  <svg class="control__line">
-                    <title>Icon: Line</title>
-                    <use xlink:href="./static/icons/sprite.svg#line"></use>
-                  </svg>
+                  <span class="control__line"></span>
                 </button>
               </div>
             </div>
             <div class="main-info">
               <h1 class="title">THE OOH NOO COLLECTION</h1>
               <span class="designed">Designed in Slovenia</span>
-              <button type="submit" class="button popup-button">
+              <button type="button" class="button popup-button">
                 EXPLORE NOW
               </button>
             </div>
@@ -108,44 +96,36 @@
         <div class="container">
           <h2 class="subtitle">Category Products</h2>
           <ul class="category-list">
-            <li>
-              <div class="category-list-wrapper">
-                <img
-                  src="./static/img/apparel_kids.jpg"
-                  alt="Image: Apparel Kids"
-                  class="category-list__item"
-                /><a href="#"> <h4 class="groups">APPAREL KIDS</h4></a>
-              </div>
+            <li class="category-list__item">
+              <img
+                src="./static/img/apparel_kids.jpg"
+                alt="Image: Apparel Kids"
+                class="category-list__image"
+              /><a href="#"> <h4 class="groups">APPAREL KIDS</h4></a>
             </li>
-            <li>
-              <div class="category-list-wrapper">
-                <img
-                  src="./static/img/holiday_shop.jpg"
-                  alt="Image: Holiday Shop"
-                  class="category-list__item"
-                />
-                <a href="#"> <h4 class="groups">HOLIDAY SHOP</h4></a>
-              </div>
+            <li class="category-list__item">
+              <img
+                src="./static/img/holiday_shop.jpg"
+                alt="Image: Holiday Shop"
+                class="category-list__image"
+              />
+              <a href="#"> <h4 class="groups">HOLIDAY SHOP</h4></a>
             </li>
-            <li>
-              <div class="category-list-wrapper">
-                <img
-                  src="./static/img/toys.jpg"
-                  alt="Image: Toys"
-                  class="category-list__item"
-                />
-                <a href="./pages/toys.html"> <h4 class="groups">TOYS</h4></a>
-              </div>
+            <li class="category-list__item">
+              <img
+                src="./static/img/toys.jpg"
+                alt="Image: Toys"
+                class="category-list__image"
+              />
+              <a href="./pages/toys.html"> <h4 class="groups">TOYS</h4></a>
             </li>
-            <li>
-              <div class="category-list-wrapper">
-                <img
-                  src="./static/img/accessories.jpg"
-                  alt="Image: Accessories"
-                  class="category-list__item"
-                />
-                <a href="#"> <h4 class="groups">ACCESSORIES</h4></a>
-              </div>
+            <li class="category-list__item">
+              <img
+                src="./static/img/accessories.jpg"
+                alt="Image: Accessories"
+                class="category-list__image"
+              />
+              <a href="#"> <h4 class="groups">ACCESSORIES</h4></a>
             </li>
           </ul>
           <div class="arrows-wrapper">
@@ -179,13 +159,23 @@
               class="delivery-image"
             />
             <div class="delivery-info">
-              <h2 class="subtitle">Delivery</h2>
+              <h2 class="subtitle shift">Delivery</h2>
               <ul class="delivery-list">
-                <li><h3 class="italic">Delivery</h3></li>
-                <li><h3 class="italic">Guarantee</h3></li>
-                <li><h3 class="italic">Credit</h3></li>
+                <li>
+                  <h3
+                    class="italic delivery-list__title delivery-list__title--checked"
+                  >
+                    Delivery
+                  </h3>
+                </li>
+                <li>
+                  <h3 class="italic delivery-list__title shift">Guarantee</h3>
+                </li>
+                <li>
+                  <h3 class="italic delivery-list__title shift">Credit</h3>
+                </li>
               </ul>
-              <div class="info-wrapper">
+              <div class="info-wrapper shift">
                 <p class="info">
                   Some days i feel like i've been working on dlk my entire life
                   and there are other days that i am completely shocked that
@@ -198,7 +188,7 @@
                   with to thank!
                 </p>
               </div>
-              <a href="#" class="button button-link">LEARN MORE</a>
+              <a href="#" class="button button-link shift">LEARN MORE</a>
             </div>
           </div>
         </div>
@@ -221,7 +211,7 @@
       <div class="container">
         <div class="about-wrapper">
           <section class="design">
-            <h2 class="subtitle">Design Life Kids</h2>
+            <h2 class="subtitle subtitle--up">Design Life Kids</h2>
             <span class="italic">About Us</span>
             <p class="info">
               Some days i feel like i've been working on dlk my entire life and
@@ -231,12 +221,14 @@
             <a href="#" class="button button-link button-margin">buy now</a>
           </section>
           <section class="contacts">
-            <h2 class="subtitle">Contacts</h2>
-            <p class="info">
-              Some days i feel like i've been working on dlk my entire life and
-              there are other days that i am completely shocked that four years
-              have flown by. It's simply magical.
-            </p>
+            <div class="contacts-info">
+              <h2 class="subtitle subtitle--up">Contacts</h2>
+              <p class="info">
+                Some days i feel like i've been working on dlk my entire life
+                and there are other days that i am completely shocked that four
+                years have flown by. It's simply magical.
+              </p>
+            </div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.5508789216715!2d49.288043615981344!3d53.51221786997473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1661177956763!5m2!1sru!2sru"
               width="483"
@@ -374,7 +366,6 @@
                 value="1"
                 aria-label="Ужасно"
                 class="rating__star"
-                checked
               />
               <input
                 type="radio"
@@ -409,8 +400,8 @@
           <span class="footer-bottom"
             >Copyright © 2018 Dlk • Design Life Kids</span
           >
-          <span class="footer-bottom footer-bottom--light"
-            >Web Design — Direct Line Development</span
+          <a href="#" class="footer-bottom footer-bottom--light"
+            >Web Design — Direct Line Development</a
           >
         </div>
       </div>
@@ -478,17 +469,24 @@
                 class="form__input message"
               ></textarea>
             </div>
-            <label class="personal form__personal">
-              <input type="checkbox" class="form__input checkbox" />
-              <div class="check"></div>
-              By clicking on the button, you consent to the processing of your
-              personal data
-            </label>
+            <div class="personal">
+              <input
+                type="checkbox"
+                class="form__input checkbox"
+                id="input-personal"
+                checked
+              />
+              <label for="input-personal" class="form__label"
+                >By clicking on the button, you consent to the processing of
+                your personal data</label
+              >
+            </div>
             <button type="submit" class="button" disabled>Submit</button>
           </div>
         </form>
       </div>
     </section>
-    <script src="./js/index.js"></script>
+    <script src="./js/common.min.js"></script>
+    <script src="./js/index.min.js"></script>
   </body>
 </html>

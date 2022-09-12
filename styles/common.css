@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   background-color: #fff;
@@ -48,12 +48,9 @@ fieldset {
 }
 
 .container-column {
+  position: relative;
   display: flex;
   flex-direction: column;
-}
-
-.section {
-  margin: 60px 0 50px 0;
 }
 
 .form-wrapper {
@@ -77,7 +74,7 @@ fieldset {
 }
 
 .form__label--roboto {
-  font-family: "Roboto";
+  font-family: "Roboto", Arial, sans-serif;
   line-height: 16px;
   margin-bottom: 6px;
 }
@@ -91,6 +88,12 @@ fieldset {
 .form__input {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.form__input:hover,
+.form__input:focus {
+  border-color: rgba(194, 153, 116, 0.7);
 }
 
 .name {
@@ -124,11 +127,62 @@ fieldset {
 .personal {
   display: flex;
   align-items: center;
-  padding-left: 35px;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-image: url("../static/icons/checkbox_off.svg");
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.checkbox:checked + label::before {
+  background-image: url("../static/icons/checkbox_on.svg");
+}
+
+.radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.radio + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../static/icons/radio_off.svg");
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.radio:checked + label::before {
+  background-image: url("../static/icons/radio_on.svg");
 }
 
 .title {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
@@ -136,11 +190,15 @@ fieldset {
 }
 
 .subtitle {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-size: 38px;
   font-weight: 700;
   line-height: 46px;
   text-transform: uppercase;
+}
+
+.subtitle--up {
+  margin-top: -25px;
 }
 
 .hidden {
@@ -148,7 +206,7 @@ fieldset {
 }
 
 .italic {
-  font-family: "Crimson Text", sans-serif;
+  font-family: "Crimson Text", Arial, sans-serif;
   font-style: italic;
   font-size: 26px;
   font-weight: 400;
@@ -157,15 +215,20 @@ fieldset {
 
 .groups {
   position: absolute;
-  top: 43%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-weight: 700;
   font-size: 26px;
   line-height: 32px;
   text-transform: uppercase;
   color: #ffffff;
   text-shadow: 0px 0px 40px rgba(147, 3, 3, 0.25);
-  width: 100%;
   text-align: center;
+}
+
+.groups:hover {
+  text-decoration: underline;
 }
 
 .info {
@@ -192,6 +255,10 @@ fieldset {
   background: #c29974;
 }
 
+.button:active {
+  background: #cfaf91;
+}
+
 .button:disabled {
   background: #c1c1c1;
 }
@@ -201,29 +268,8 @@ fieldset {
   max-width: max-content;
 }
 
-.checkbox {
-  position: absolute;
-  appearance: none;
-}
-
-.check {
-  position: absolute;
-  width: 19px;
-  height: 19px;
-  background-image: url("../static/icons/checkbox_off.svg");
-  margin-left: -35px;
-}
-
-.checkbox:checked + .check {
-  background-image: url("../static/icons/checkbox_on.svg");
-}
-
 .header {
   margin: 50px 0 40px 0;
-}
-
-.header--big {
-  margin-bottom: 129px;
 }
 
 .header-wrapper {
@@ -271,10 +317,18 @@ fieldset {
 .search {
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 
 .contact {
   font-weight: 700;
+}
+
+.logo:hover,
+.header-nav__link:hover,
+.search:hover,
+.contact:hover {
+  opacity: 0.5;
 }
 
 .breadcrumbs {
@@ -287,7 +341,7 @@ fieldset {
 }
 
 .breadcrumbs-list__item {
-  font-family: "Crimson Text", sans-serif;
+  font-family: "Crimson Text", Arial, sans-serif;
   font-style: italic;
   font-size: 20px;
   font-weight: 400;
@@ -317,11 +371,23 @@ fieldset {
 }
 
 .pagination__link {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.pagination__link:hover {
+  color: #aaaaaa;
+}
+
+.pagination__link--active {
+  color: #c29974;
+}
+
+.dart {
+  fill: #1e0606;
 }
 
 .arrow {
@@ -336,7 +402,18 @@ fieldset {
 .arrow__icon {
   width: inherit;
   height: inherit;
+  stroke: #1e0606;
   opacity: 0.12;
+}
+
+.arrow__icon:hover {
+  stroke: #c29974;
+  opacity: 1;
+}
+
+.arrow__icon:active {
+  stroke: #c29974;
+  opacity: 0.7;
 }
 
 .footer {
@@ -347,7 +424,7 @@ fieldset {
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 23px;
+  margin-bottom: 30px;
 }
 
 .footer-title {
@@ -355,9 +432,9 @@ fieldset {
   font-weight: 400;
   line-height: 22px;
   color: #aaaaaa;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   border-bottom: 1px solid #666666;
-  padding-bottom: 28px;
+  padding-bottom: 25px;
 }
 
 .footer-section {
@@ -379,6 +456,16 @@ fieldset {
   color: #ffffff;
 }
 
+.footer-nav__link:hover,
+.social-list__icon:hover {
+  opacity: 0.5;
+}
+
+.footer-nav__link:active,
+.social-list__icon:active {
+  opacity: 0.2;
+}
+
 .footer-form {
   display: flex;
 }
@@ -389,6 +476,12 @@ fieldset {
   background: #666666;
   border: none;
   box-shadow: none;
+  outline: none;
+}
+
+.footer-input:hover,
+.footer-input:focus {
+  border: 1px solid #fffdfd;
 }
 
 .footer-input::placeholder {
@@ -444,6 +537,14 @@ fieldset {
   background-repeat: repeat-x;
 }
 
+.rating__caption {
+  float: left;
+}
+
+.rating__caption--hovered {
+  color: #c29974;
+}
+
 .rating__star {
   position: absolute;
   top: 0;
@@ -459,7 +560,15 @@ fieldset {
 }
 
 .rating__star:checked {
-  background-image: url("../static/icons/star-click.svg");
+  background-image: url("../static/icons/star_click.svg");
+}
+
+.rating__star:hover {
+  background-image: url("../static/icons/star_hover.svg");
+}
+
+.rating__star:hover ~ .rating__star {
+  background-image: url("../static/icons/star.svg");
 }
 
 .rating__star:nth-of-type(1) {
@@ -487,10 +596,6 @@ fieldset {
   width: 5em;
 }
 
-.rating__caption {
-  float: left;
-}
-
 .rating,
 .footer-bottom {
   width: 380px;
@@ -498,4 +603,10 @@ fieldset {
 
 .footer-bottom--light {
   color: #a2a2a2;
+}
+
+.footer-bottom--light:hover,
+.footer-bottom--light:active {
+  color: #fff;
+  text-decoration: underline;
 }
